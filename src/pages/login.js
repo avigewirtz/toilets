@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link, navigate } from 'gatsby';
 import { validateEmail, isEmpty } from '../helpers/general';
-import * as styles from './login.module.css';
+import * as styles from './CSS/login.module.css';
 
 import AttributeGrid from '../components/AttributeGrid/AttributeGrid';
 import Layout from '../components/Layout/Layout';

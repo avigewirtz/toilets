@@ -3,7 +3,7 @@ import * as React from 'react';
 import Button from '../components/Button';
 import Container from '../components/Container';
 import Layout from '../components/Layout/Layout';
-import * as styles from './styling.module.css';
+import * as styles from './CSS/styling.module.css';
 
 const StylingPage = () => {
   return (

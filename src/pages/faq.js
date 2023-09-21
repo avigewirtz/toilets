@@ -1,5 +1,5 @@
 import React from 'react';
-import * as styles from './faq.module.css';
+import * as styles from './CSS/faq.module.css';
 
 import Layout from '../components/Layout/Layout';
 import Banner from '../components/Banner';

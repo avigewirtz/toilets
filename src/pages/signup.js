@@ -5,7 +5,7 @@ import {
   validateStrongPassword,
   isEmpty,
 } from '../helpers/general';
-import * as styles from './signup.module.css';
+import * as styles from './CSS/signup.module.css';
 
 import AttributeGrid from '../components/AttributeGrid/AttributeGrid';
 import Layout from '../components/Layout/Layout';

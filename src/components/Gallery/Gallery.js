@@ -1,7 +1,5 @@
 import React from 'react';
-
 import Slider from '../Slider';
-
 import * as styles from './Gallery.module.css';
 
 const Gallery = (props) => {

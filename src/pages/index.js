@@ -1,5 +1,4 @@
 import * as React from 'react';
-
 import AttributeGrid from '../components/AttributeGrid';
 import Container from '../components/Container';
 import Hero from '../components/Hero';
@@ -13,7 +12,7 @@ import Title from '../components/Title';
 
 import { generateMockBlogData, generateMockProductData } from '../helpers/mock';
 
-import * as styles from './index.module.css';
+import * as styles from './CSS/index.module.css';
 import { Link, navigate } from 'gatsby';
 
 const IndexPage = () => {
@@ -29,37 +28,30 @@ const IndexPage = () => {
       {/* Hero Container */}
       <Hero
         maxWidth={'500px'}
-        image={'/banner1.png'}
-        title={'Essentials for a cold winter'}
-        subtitle={'Discover Autumn Winter 2021'}
-        ctaText={'shop now'}
+        image={'/group1.png'}
+        title={'Reliable Porta Potty Rentals'}
+        subtitle={'Clean, Sanitary, and Timely Delivered'}
+        ctaText={'Rent now'}
         ctaAction={goToShop}
       />
+{/* Message Container */}
+<div className={styles.messageContainer}>
+    <p>
+        Providing reliable porta potty solutions for all your events and projects. Proudly serving all 50 US states.
+    </p>
+    <p>
+        Partnered with <span className={styles.gold}>EventMaster</span> and 
+         <span className={styles.gold}> ConstructionPros</span> to ensure timely deliveries and service.
+    </p>
+</div>
 
-      {/* Message Container */}
-      <div className={styles.messageContainer}>
-        <p>
-          This is a demonstration of the Sydney theme for verse by{' '}
-          <span className={styles.gold}>matter design.</span>
-        </p>
-        <p>
-          wear by <span className={styles.gold}>sunspel</span> and{' '}
-          <span className={styles.gold}>scotch&soda</span>
-        </p>
-      </div>
 
-      {/* Collection Container */}
-      <div className={styles.collectionContainer}>
-        <Container size={'large'}>
-          <Title name={'New Collection'} />
-          <ProductCollectionGrid />
-        </Container>
-      </div>
+
 
       {/* New Arrivals */}
       <div className={styles.newArrivalsContainer}>
         <Container>
-          <Title name={'New Arrivals'} link={'/shop'} textLink={'view all'} />
+          <Title name={'Porta Potties'} link={'/shop'} textLink={'view all'} />
           <ProductCardGrid
             spacing={true}
             showSlider
@@ -70,67 +62,23 @@ const IndexPage = () => {
         </Container>
       </div>
 
-      {/* Highlight  */}
-      <div className={styles.highlightContainer}>
-        <Container size={'large'} fullMobile>
-          <Highlight
-            image={'/highlight.png'}
-            altImage={'highlight image'}
-            miniImage={'/highlightmin.png'}
-            miniImageAlt={'mini highlight image'}
-            title={'Luxury Knitwear'}
-            description={`This soft lambswool jumper is knitted in Scotland, using yarn from one of the world's oldest spinners based in Fife`}
-            textLink={'shop now'}
-            link={'/shop'}
-          />
-        </Container>
-      </div>
-
-      {/* Promotion */}
-      <div className={styles.promotionContainer}>
-        <Hero image={'/banner2.png'} title={`-50% off \n All Essentials`} />
-        <div className={styles.linkContainers}>
-          <Link to={'/shop'}>WOMAN</Link>
-          <Link to={'/shop'}>MAN</Link>
-        </div>
-      </div>
 
       {/* Quote */}
       <Quote
         bgColor={'var(--standard-light-grey)'}
-        title={'about Sydney'}
+        title={'About John NY Anytime'}
         quote={
-          '“We believe in two things: the pursuit of quality in everything we do, and looking after one another. Everything else should take care of itself.”'
+          'We believe in two things: the pursuit of quality in everything we do, and looking after one another. Everything else should take care of itself.'
         }
       />
 
-      {/* Blog Grid */}
-      <div className={styles.blogsContainer}>
-        <Container size={'large'}>
-          <Title name={'Journal'} subtitle={'Notes on life and style'} />
-          <BlogPreviewGrid data={blogData} />
-        </Container>
-      </div>
-
-      {/* Promotion */}
-      <div className={styles.sustainableContainer}>
-        <Hero
-          image={'/banner3.png'}
-          title={'We are Sustainable'}
-          subtitle={
-            'From caring for our land to supporting our people, discover the steps we’re taking to do more for the world around us.'
-          }
-          ctaText={'read more'}
-          maxWidth={'660px'}
-          ctaStyle={styles.ctaCustomButton}
-        />
-      </div>
+  
 
       {/* Social Media */}
       <div className={styles.socialContainer}>
         <Title
-          name={'Styled by You'}
-          subtitle={'Tag @sydney to be featured.'}
+          //  name={'Styled by You'}
+          subtitle={'Tag @JohnNYAnytime to be featured.'}
         />
         <div className={styles.socialContentGrid}>
           <img src={`/social/socialMedia1.png`} alt={'social media 1'} />

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { validateEmail } from '../helpers/general';
-import * as styles from './forgot.module.css';
+import * as styles from './CSS/forgot.module.css';
 
 import Layout from '../components/Layout/Layout';
 import FormInputField from '../components/FormInputField/FormInputField';

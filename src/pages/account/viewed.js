@@ -1,6 +1,6 @@
 import React from 'react';
 import { navigate } from 'gatsby';
-import * as styles from './viewed.module.css';
+import * as styles from '../CSS/viewed.module.css';
 
 import AccountLayout from '../../components/AccountLayout';
 import Breadcrumbs from '../../components/Breadcrumbs';

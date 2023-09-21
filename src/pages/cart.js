@@ -8,7 +8,7 @@ import Footer from '../components/Footer';
 import Icon from '../components/Icons/Icon';
 import OrderSummary from '../components/OrderSummary';
 
-import * as styles from './cart.module.css';
+import * as styles from './CSS/cart.module.css';
 
 const CartPage = (props) => {
   const sampleCartItem = {

@@ -29,10 +29,10 @@ const ExpandedMenu = (props) => {
           );
         })}
       </div>
-      <div className={styles.imageContainer}>
+      {/* <div className={styles.imageContainer}>
         <img src={'/headerPic1.png'} alt={'header 1'}></img>
         <img src={'/headerPic2.png'} alt={'header 2'}></img>
-      </div>
+      </div> */}
     </div>
   );
 };

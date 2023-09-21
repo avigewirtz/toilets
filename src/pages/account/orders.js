@@ -1,5 +1,5 @@
 import React from 'react';
-import * as styles from './orders.module.css';
+import * as styles from '../CSS/orders.module.css';
 
 import AccountLayout from '../../components/AccountLayout/AccountLayout';
 import Breadcrumbs from '../../components/Breadcrumbs';

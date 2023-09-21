@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { navigate } from 'gatsby';
-import * as styles from './404.module.css';
+import * as styles from './CSS/404.module.css';
 
 import Button from '../components/Button';
 import Container from '../components/Container';

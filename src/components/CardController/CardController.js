@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-
 import Container from '../Container';
 import Checkbox from '../Checkbox';
 import * as styles from './CardController.module.css';
@@ -8,7 +7,7 @@ import Drawer from '../Drawer';
 import Icon from '../Icons/Icon';
 
 const CardController = (props) => {
-  const { filters, visible, closeFilter } = props;
+  const { filters, visible, closeFilter, onFilterChange } = props;
   const [category, setCategory] = useState();
   const [filterState, setFilterState] = useState(filters);
 
@@ -28,6 +27,27 @@ const CardController = (props) => {
     setFilterState(filterStateCopy);
   };
 
+  const getSelectedFilters = () => {
+    let selectedFilters = {
+      category: []
+    };
+
+    filterState.forEach(filterCategory => {
+      filterCategory.items.forEach(item => {
+        if (item.value) {
+          selectedFilters.category.push(item.name);
+        }
+      });
+    });
+
+    return selectedFilters;
+  };
+
+  const handleViewItems = () => {
+    onFilterChange(getSelectedFilters());
+    closeFilter();
+  };
+
   return (
     <div>
       <div
@@ -39,7 +59,6 @@ const CardController = (props) => {
           <div className={styles.filterContainer}>
             {filterState &&
               filterState.map((filter, categoryIndex) => {
-                // if number of filter per category is less than 4 maintain single layout
                 const colNum = filter.items.length >= 4 ? 2 : 1;
                 return (
                   <div key={`category-${categoryIndex}`}>
@@ -70,7 +89,7 @@ const CardController = (props) => {
         </Container>
         <div className={styles.actionContainer}>
           <Button
-            onClick={closeFilter}
+            onClick={handleViewItems}
             className={styles.customButtonStyling}
             level={'primary'}
           >

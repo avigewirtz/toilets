@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { navigate } from 'gatsby';
-import * as styles from './support.module.css';
+import * as styles from './CSS/support.module.css';
 
 import Banner from '../components/Banner';
 import Contact from '../components/Contact';
@@ -11,7 +11,6 @@ import Container from '../components/Container';
 
 const SupportPage = (props) => {
   const subpages = [
-    { title: 'Shipping', key: 'shipping' },
     { title: 'Returns', key: 'returns' },
     { title: 'Payments & Security', key: 'payments' },
     { title: 'Terms & Conditions', key: 'terms' },
@@ -29,9 +28,6 @@ const SupportPage = (props) => {
         tempElement = <Contact />;
         break;
       case 'policy':
-        tempElement = <Policy />;
-        break;
-      case 'shipping':
         tempElement = <Policy />;
         break;
       case 'returns':

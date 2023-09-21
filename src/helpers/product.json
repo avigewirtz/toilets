@@ -1,115 +1,372 @@
 [
     {
-        "productCode": "MJUM8066-GYDZ",
-        "name": "Lambswool Crew Neck Jumper",
-        "vendor": "Sunspel",
+        "name": "Global",
         "price": 75,
-        "alt": "lambswool crew neck jumper",
-        "image": "/products/pdp1.jpeg",
-        "colorOptions": [
-            {"color": "#000000", "title": "Anthracite Melange"},
-            {"color": "#4D34AE", "title": "Pale Purple"},
-            {"color": "#488266", "title": "Green Moss"}
-        ],
-        "sizeOptions": ["xs", "s", "m", "l", "xl"],
-        "wishlist": true,
-        "tags": ["sample"],
+        "alt": "Global",
+        "image": "/products/global_front.jpg",
+        "tags": ["global", "potty", "standard"],
         "gallery": [
-            {"image": "/products/pdp1.jpeg", "alt": "pdp description 1"},
-            {"image": "/products/pdp2.jpeg", "alt": "pdp description 2"},
-            {"image": "/products/pdp3.jpeg", "alt": "pdp description 3"},
-            {"image": "/products/pdp4.jpeg", "alt": "pdp description 4"}
+            {"image": "/products/global_front.jpg", "alt": "Global front"},
+            {"image": "/products/global_door_open.jpg", "alt": "Global door open"},
+            {"image": "/products/global_exploded.jpg", "alt": "Global exploded"},
+            {"image": "/products/global_left.jpg", "alt": "Global left"}
         ],
-        "description": "This soft lambswool jumper is knitted in Scotland, using yarn from one of the world's oldest spinners based in Fife. Once knitted, the garment is washed in Scottish spring water to make it beautifully soft."
+        "description": "Developed as an entry level restroom, the Global still provides end users with a rich assortment of unique features.",
+        "Features": [
+            "Large 70 gallon sumped tank",
+            "Impact base provides three times greater ventilation",
+            "One-piece, blow-molded door",
+            "Hover handles and extra-large door latch for hands-free operation"
+        ],
+        "Specifications": {
+            "Height": "90\" (2286 mm)",
+            "Width": "44\" (1118 mm)",
+            "Depth": "48\" (1219 mm)",
+            "Door opening": "72” x 24” (1829 mm x 609 mm)",
+            "Floor area": "840 in² (5419.34 cm²)",
+            "Tank volume": "70 gal. (265L)",
+            "Seat height": "18.75\" (476.25 mm)",
+            "Weight": "170 lbs (77 kg)"
+        },
+        "Overview": "Originally designed as an entry level restroom, the Global has evolved into an extremely cost-effective restroom with a rich assortment of unique benefits. The new impact base has an open grid floor design which allows three times as much fresh air to circulate throughout the restroom. In addition, it comes with a smooth floor cover for those special instances in which the end user requires a smooth floor. A three roll of toilet paper holder and a large door latch that can be operated with the elbow rather than by hand to help prevent the spread of germs. There is also a “hover handle” on the inside of the door for use by those who do not wish to sit directly on the seat. With a lower initial investment operators might believe quality could be an issue. The fact is Global restrooms have a sturdy framework featuring an incredibly strong, one-piece continuous door frame. The latest upgrades also increased the side panel thickness by an additional 12% and the tank and urinal are larger, stronger and easier to clean. While you might think of the Global as an entry level restroom, it easily competes with any restroom for quality and durability."
     },
+    
     {
-        "name": "Classic T-Shirt",
-        "price": 75,
-        "alt": "classic t-shirt 1",
-        "image": "/products/shirt1.jpg",
-        "tags": ["shirt", "men"]
+        "name": "Axxis",
+        "price": 85,
+        "alt": "Axxis",
+        "image": "/products/axxis_front.jpg",
+        "tags": ["axxis", "potty", "standard"],
+        "gallery": [
+            {"image": "/products/axxis_front.jpg", "alt": "AXXIS front"},
+            {"image": "/products/axxis_front_open_door.jpg", "alt": "AXXIS front door open"},
+            {"image": "/products/axxis_front_right.jpg", "alt": "AXXIS front right"},
+            {"image": "/products/axxis_front_left.jpg ", "alt": "AXXIS front left"}
+        ],
+        "description": "Satellite Industries takes pride in listening and learning from our customers. With a team of industry experts, we are excited to deliver what we consider to be a significant innovation to our line of portable restrooms and the industry as a whole. Introducing the Axxis. Featuring revolutionary, self-closing hinges, a heavy-duty rotary latch, deep ambidextrous door pull and a re-engineered door frame.",
+        "Features": [
+            "Outdoor rated materials and molded polymer construction ensure years of use.",
+            "Long life stainless steel hinges with separate door closure springs.",
+            "Heavy-duty, easy-to-use rotary latch that is designed to withstand the roughest users, and easy to grip hover handle.",
+            "Deep, ambidextrous door pull provides better grip and ultimate convenience.",
+            "Re-engineered door frame which features double-wall construction.",
+            "Multiple strapping recesses.",
+            "60-gallon waste tank which boasts a smooth interior and deep sump.",
+            "Toilet seat and cover.",
+            "Urinal.",
+            "Three-roll toilet paper holder with included rod and padlock.",
+            "Stainless steel locking brackets.",
+            "Coat hook.",
+            "Choose the Axxis-1 with a standard, low-profile roof or the Axxis-2 with the higher, Keystone roof.",
+            "Modular, all-common wall construction makes for easy and inexpensive repairs.",
+            "High molecular-weight material with extra UV protection ensures that your portable restrooms will continue to look new through years of work."
+        ],
+        "Specifications": {
+            "Height w/Standard Roof": "90\" (2286 mm)",
+            "Height w/Keystone Roof": "92\" (2336.8 mm)",
+            "Width": "44\" (1117.6 mm)",
+            "Depth": "48\" (1219.2 mm)",
+            "Door opening": "27” x 24\" (1829 mm x 609 mm)",
+            "Floor area": "840 in² (5419.34 cm²)",
+            "Tank volume": "60 gal. (227L)",
+            "Seat height": "17\" (431.8 mm)",
+            "Weight": "165 lbs. (74.84 kg)",
+            "Weight w/Ambassador Package": "210 lbs. (95.25 kg)"
+        },
+        "Overview": "The Axxis is a standard size portable restroom, loaded with features. A new rotary door latch and exclusive truClose hinge set this unit apart."
     },
-    {
-        "name": "Classic T-Shirt",
-        "price": 75,
-        "alt": "classic t-shirt 2",
-        "image": "/products/shirt2.jpg",
-        "tags": ["shirt", "men"]
-    },
-    {
-        "name": "Classic T-Shirt",
-        "price": 75,
-        "alt": "classic t-shirt 3",
-        "image": "/products/shirt3.jpg",
-        "tags": ["shirt", "men"]
-    },
-    {
-        "name": "Relaxed-fit graphic T-shirt",
-        "price": 13.90,
-        "alt": "relaxed t shirt woman",
-        "image": "/products/woman1.jpeg",
-        "tags": ["woman"],
-        "meta": "+ 2 colors"
-    },
-    {
-        "name": "Relaxed-fit graphic T-shirt",
-        "price": 15.90,
-        "alt": "relaxed t shirt woman",
-        "image": "/products/woman2.jpeg",
-        "tags": ["woman"]
-    },    
-    {
-        "name": "Relaxed-fit graphic T-shirt",
-        "price": 13.90,
-        "alt": "relaxed t shirt woman",
-        "image": "/products/woman3.jpeg",
-        "tags": ["woman"],
-        "meta": "+ 2 colors"
-    },
-    {
-        "name": "Relaxed-fit graphic T-shirt",
-        "price": 15.90,
-        "alt": "relaxed t shirt woman",
-        "image": "/products/woman4.jpeg",
-        "tags": ["woman"]
-    },
-    {
-        "name": "Relaxed-fit graphic T-shirt",
-        "price": 15.90,
-        "alt": "relaxed t shirt woman",
-        "image": "/products/woman5.jpeg",
-        "tags": ["woman"],
-        "originalPrice": 31.50
 
-    },
     {
-        "name": "Relaxed-fit graphic T-shirt",
-        "price": 21,
-        "alt": "relaxed t shirt woman",
-        "image": "/products/woman6.jpeg",
-        "tags": ["woman"]
+        "name": "Tufway",
+        "price": 105,
+        "alt": "Tufway",
+        "image": "/products/tufway_front.jpg",
+        "tags": ["tufway", "potty", "standard"],
+        "gallery": [
+            {"image": "/products/tufway_front.jpg", "alt": "Tufway front"},
+            {"image": "/products/tufway_left.jpg", "alt": "Tufway left"},
+            {"image": "/products/tufway_right.jpg", "alt": "Tufway right"},
+            {"image": "/products/tufway_bird.jpg", "alt": "Tufway bird"}
+        ],
+        "description": "A unique combination of durability and comfort is why operators and end users have made Tufway the most used restroom in the world.",
+        "Features": [
+            "Large 70 gallon sumped tank",
+            "Molded-in vent screens",
+            "Unbreakable corner construction",
+            "Unbreakable stand over urinal",
+            "Convenient coat hook",
+            "Multiple flushing options",
+            "10 Year Limited Warranty"
+        ],
+        "Specifications": {
+            "Height": "91\" (2311 mm)",
+            "Width": "44\" (1118 mm)",
+            "Depth": "48\" (1219 mm)",
+            "Door opening": "73\" x 24\" (1854 mm x 610 mm)",
+            "Floor area": "840 in² (5419.34 cm²)",
+            "Tank volume": "70 gal. (265L)",
+            "Swish Tank volume": "60 gal. (227L)",
+            "Seat height": "18.75\" (476.25 mm)",
+            "Weight": "164 lbs. (75 kg)"
+        },
+        "Overview": "A unique combination of durability and comfort is why operators and end users have made Tufway the most used restroom in the world."
     },
-    {
-        "name": "Relaxed-fit graphic T-shirt",
-        "price": 15.90,
-        "alt": "relaxed t shirt woman",
-        "image": "/products/woman3.jpeg",
-        "tags": ["woman"]
-    },
-    {
-        "name": "Relaxed-fit graphic T-shirt",
-        "price": 15.90,
-        "alt": "relaxed t shirt woman",
-        "image": "/products/woman2.jpeg",
-        "tags": ["woman"],
-        "originalPrice": 31.50
+    
 
-    },
+
     {
-        "name": "Relaxed-fit graphic T-shirt",
-        "price": 21,
-        "alt": "relaxed t shirt woman",
-        "image": "/products/woman1.jpeg",
-        "tags": ["woman"]
+        "name": "Aspen",
+        "price": 105,
+        "alt": "ASPEN",
+        "image": "/products/Aspen_Front.jpg",
+        "tags": ["aspen", "potty", "standard"],
+        "gallery": [
+            {"image": "/products/Aspen_Front.jpg", "alt": "Aspen front"},
+            {"image": "/products/Aspen_Left.jpg", "alt": "Aspen left"},
+            {"image": "/products/Aspen_Right.jpg", "alt": "Aspen right"},
+            {"image": "/products/Aspen_Open.jpg", "alt": "Aspen open"},
+            {"image": "/products/Aspen_Back.jpg", "alt": "Aspen back"}
+        ],
+        "description": "Stand out from the crowd with the Aspen! The sleek, modern design is ideal for the special events yet tough enough to handle your job.",
+        "Features": [
+            "The attractive, contemporary design is available in a variety of color options",
+            "Unique elliptical shaped design adds integrity, strength and interior room",
+            "Standard Unit comes complete with hover handle, coat/purse hook, oversized mirror and shelves",
+            "Rugged, large capacity drop tank with sloping lines keeps the tank top dry and clean",
+            "Large integrated vents eliminate unnecessary screen maintenance",
+            "Oversized decal areas for custom logos on both door and side panels"
+        ],
+        "Specifications": {
+            "Height": "91\" (2311.4 mm)",
+            "Width": "44\" (1117.6 mm)",
+            "Depth": "48\" (1219.2 mm)",
+            "Door opening": "25” x 73.4\" (635 mm x 1864.36 mm)",
+            "Floor area": "840 in² (5419.34 cm²)",
+            "Tank volume": "60 gal. (227.125L)",
+            "Seat height": "17\" (431.8 mm)",
+            "Weight": "165 lbs (74.8427 kg)"
+        },
+        "Overview": "Stand out from the crowd with the Aspen! The sleek, modern design is ideal for the special events yet tough enough to handle your job."
+    },
+
+    {
+        "name": "Maxim 3000",
+        "price": 115,
+        "alt": "Maxim 3000",
+        "image": "/products/maxim3000_front.jpg",
+        "tags": ["maxim3000", "potty", "standard"],
+        "gallery": [
+            {"image": "/products/maxim3000_front.jpg", "alt": "Maxim 3000 front"},
+            {"image": "/products/maxim3000_left.jpg", "alt": "Maxim 3000 left"},
+            {"image": "/products/maxim3000_right.jpg", "alt": "Maxim 3000 right"},
+            {"image": "/products/maxim3000_door_open.jpg", "alt": "Maxim 3000 door open"},
+            {"image": "/products/maxim3000_bird.jpg", "alt": "Maxim 3000 bird"}
+        ],
+        "description": "The most outstanding features of the Maxim 3000™ are its ultra-smooth walls and spacious interior. With no ledges to collect dust, debris or waste, the Maxim 3000 is able to maintain a clean appearance long after a service call.",
+        "Features": [
+            "Large 70 gallon tank",
+            "Ultra strong and smooth, two-ply walls",
+            "Vandal proof door springs",
+            "Built-in shelf, hanging hook and mirror",
+            "10 Year Limited Warranty"
+        ],
+        "Specifications": {
+            "Height": "90\" (2286 mm)",
+            "Width": "44\" (1118 mm)",
+            "Depth": "48\" (1219 mm)",
+            "Door opening": "24” x 75.38” (610 mm x 1915 mm)",
+            "Floor area": "840 in² (5419.34 cm²)",
+            "Tank volume": "70 gal. (265L)",
+            "Seat height": "19” (482.6 mm)",
+            "Weight": "189 lbs. (85.8 kg)"
+        },
+        "Overview": "The most outstanding features of the Maxim 3000™ are its ultra-smooth walls and spacious interior. With no ledges to collect dust, debris or waste, the Maxim 3000 is able to maintain a clean appearance long after a service call. Inside, the rounded corners create more open space and a uniquely contoured tank provides end-users a more comfortable sitting position. Along with its beautiful appearance, the Maxim 3000 is also incredibly strong. By utilizing blow-mold technology to create twin-panel walls and a blow molded front, the cabana is almost indestructible. The cabana is also strengthened by interlocking corners, a fitted base and an overlapping roof design. Another clear advantage of the Maxim 3000 is the simplicity of design. It has 40% fewer parts than a typical restroom, which means there is less to break and fewer parts need to be stocked for inventory. Other great features of the Maxim 3000 include deep, well defined corner and roof grips for easy maneuvering, two strong, vandal resistant door springs, a hanging hook and shelf for the convenience of users and a built-in mirror. Overall, the Maxim 3000 requires little maintenance, is spacious and has a very modern, sleek appearance. Together, these features make it the ideal restroom for operators and end-users."
+    },
+
+    {
+        "name": "Liberty",
+        "price": 125,
+        "alt": "Liberty",
+        "image": "/products/liberty_front.jpg",
+        "tags": ["liberty", "potty", "wheelchair accessible"],
+        "gallery": [
+            {"image": "/products/liberty_front.jpg", "alt": "Liberty front"},
+            {"image": "/products/liberty_left.jpg", "alt": "Liberty left"},
+            {"image": "/products/liberty_right.jpg", "alt": "Liberty right"},
+            {"image": "/products/liberty_open.jpg", "alt": "Liberty door open"},
+            {"image": "/products/liberty_bird.jpg", "alt": "Liberty bird"}
+        ],
+        "description": "Developed as an alternative to full ADA compliant restrooms, the Liberty is a spacious, wheelchair accessible restroom that can also be promoted as a family-sized restroom.",
+        "Features": [
+            "Strong, twin-sheet, non-metal door frame",
+            "Patented flat floor system",
+            "Roof tie-down grooves in both directions",
+            "Four corner stake down holes",
+            "Large, easy-to-grasp handles",
+            "Wheelchair accessible decal",
+            "4 Year Limited Warranty"
+        ],
+        "Specifications": {
+            "Height": "87\" (2209.8 mm)",
+            "Width": "62\" (1575 mm)",
+            "Depth": "62\" (1575 mm)",
+            "Door opening": "80.8” x 32.7” (2054 mm x 831 mm)",
+            "Floor area": "2,750 in² (17,741.9 cm²)",
+            "Standard tank volume": "35 gal. (132L)",
+            "Optional tank volume": "68 gal. (257L)",
+            "Seat height": "18.5\" (469.9 mm)",
+            "Weight": "250 lbs (107 kg)"
+        },
+        "Overview": "Developed as an alternative to full ADA compliant restrooms, the Liberty is a spacious, wheelchair accessible restroom that can also be promoted as a family-sized restroom. It has a patented flat-floor system for easy wheelchair access and maneuverability. The handrails and paper holder, together with the rotary latch, are designed and manufactured for simple end-user operation. Operators have the distinct advantage of owning a restroom made from high molecular weight polyethylene that is durable and vandal resistance. The entire door frame, which is made of a vacuum formed twin sheet, is able to withstand hard hits and endless pounding without bending or buckling like metal frames. The patented flat floor system, combined with the strength of the side walls and capped roof, forms a sleek, modern restroom that retains its shape over the life of the product."
+    },
+    
+    {
+        "name": "Freedom",
+        "price": 135,
+        "alt": "Freedom",
+        "image": "/products/freedom_front.jpg",
+        "tags": ["freedom", "potty", "wheelchair accessible"],
+        "gallery": [
+            {"image": "/products/freedom_front.jpg", "alt": "Freedom front"},
+            {"image": "/products/freedom_left.jpg", "alt": "Freedom left"},
+            {"image": "/products/freedom_right.jpg", "alt": "Freedom right"},
+            {"image": "/products/freedom_open.jpg", "alt": "Freedom door open"},
+            {"image": "/products/freedom_bird.jpg", "alt": "Freedom bird"}
+        ],
+        "description": "The Freedom has been reengineered for added strength and space, all within a smaller footprint! New features include a vacuum-formed base, reinforced side panels, longer hand rails, molded vents, plastic carrying handles, and a strengthened roof, door frame, closure and latch.",
+        "Features": [
+            "Fully ADA compliant",
+            "Fully Title 24 compliant",
+            "Patented flat-floor system",
+            "Multiple roof tie-down options",
+            "4 Year Limited Warranty"
+        ],
+        "Specifications": {
+            "Height": "90.5” (2298.7 mm)",
+            "Width": "66” (1676.4 mm)",
+            "Depth": "86.5” (2197 mm)",
+            "Door opening": "80.8” x 32.7” (2052.32 mm x 830.58 mm)",
+            "Floor area": "4,138 in² (26,696.721 cm²)",
+            "Tank volume (ADA Compliant)": "35 gal. (132.5L)",
+            "Tank volume (non-ADA Compliant)": "68 gal. (257L)",
+            "Seat height": "18.5” (469.9 mm)",
+            "Weight": "310 lbs. (141 kg)"
+        },
+        "Overview": "The Freedom has been reengineered for added strength and space, all within a smaller footprint! New features include a vacuum-formed base, reinforced side panels, longer hand rails, molded vents, plastic carrying handles, and a strengthened roof, door frame, closure and latch. From the ground up the Freedom is stronger, using a custom-made vacuum-formed base to create a solid foundation. In impact tests, the floor and wall joints withstood a force twice as hard as previous designs without damage, and a beveled exterior floor edge improves fork lift access for moving. The reengineered floor has the added benefit of being slightly narrower, for ease of transport, but the overall floor design actually increases the Freedom’s interior space! By widening the front floor area to increase space, it also makes the door opening larger, another added benefit! Other features of interest are the high-impact, plastic lift handles that will not rust and have a wider grip to reduce hand pressure when lifting. Molded-in vent screens were added to reduce maintenance costs, and longer hand rails provide more stability for end-users. The new roof is 50% stronger having added supports, and maintains multiple tie-down options. Finally, a new heavy-duty door closure provides added durability. When you add up all the new benefits and include our industry-leading limited 4-year warranty, the Freedom stands alone in quality and reliability."
+    },
+    
+    {
+        "name": "Highrise",
+        "price": 135,
+        "alt": "Highrise",
+        "image": "/products/highrise_front.jpg",
+        "tags": ["highrise", "potty", "spcialty"],
+        "gallery": [
+            {"image": "/products/highrise_front.jpg", "alt": "Highrise front"},
+            {"image": "/products/highrise_left.jpg", "alt": "Highrise left"},
+            {"image": "/products/highrise_left_down.jpg", "alt": "Highrise left down"},
+            {"image": "/products/highrise_lift_down.jpg", "alt": "Highrise lift down"},
+            {"image": "/products/highrise_lift_up.jpg", "alt": "Highrise lift up"},
+            {"image": "/products/highrise_arm_up.jpg", "alt": "Highrise arm up"},
+            {"image": "/products/highrise_right.jpg", "alt": "Highrise right"},
+            {"image": "/products/highrise_open.jpg", "alt": "Highrise door open"},
+            {"image": "/products/highrise_bird.jpg", "alt": "Highrise bird"}
+        ],
+        "description": "This restroom is built exclusively for the high rise construction market and offers end users and operators a unique set of features. The Highrise has been designed to be semi or fully private. Adding the roof makes it fully private and a sliding mechanism allows it to be lowered far enough to fit through standard door openings. For additional privacy the urinal is placed inside the restroom.",
+        "Features": [
+            "Fully or semi private",
+            "Internal, private urinal",
+            "Fits through door openings",
+            "Fits on freight elevators",
+            "Retractable roof (optional)",
+            "Sealed casters",
+            "10 Year Limited Warranty"
+        ],
+        "Specifications": {
+            "Height": "78” (1981 mm)",
+            "Width": "31.2” (792 mm)",
+            "Depth": "53” (1346 mm)",
+            "Tank Volume": "38 gal. (144L)",
+            "Weight": "257 lbs. (116 kg) — 307 lbs. (139 kg) (standard to full-feature unit.)",
+            "Exterior with Roof": {
+                "Height": "87.8” (2230 mm)",
+                "Width": "33.5” (851 mm)",
+                "Depth": "54” (1372 mm)"
+            },
+            "Interior": {
+                "Height": "78” (1981 mm)",
+                "Width": "30.1” (764 mm)",
+                "Depth": "51.5” (1308 mm)"
+            }
+        },
+        "Overview": "This restroom is built exclusively for the high rise construction market and offers end users and operators a unique set of features. The Highrise has been designed to be semi or fully private. Adding the roof makes it fully private and a sliding mechanism allows it to be lowered far enough to fit through standard door openings. For additional privacy the urinal is placed inside the restroom. Overall, the Highrise has a tremendous amount of interior space and privacy in situations where it was impossible to have before. The Highrise is sized to go where other restrooms cannot. With the optional roof it is only 33.5 inches wide and 78.2 inches high. This allows the Highrise to be moved through halls and doorways to the place where workers need it most. The casters are sealed to prevent freeze up and can be greased for continued reliability. The frame and floor are made from galvanized metal to prevent damage while lifting and handling. This uniquely designed restroom fills the need for privacy, maneuverability and dependability."
+    },
+    
+    {
+        "name": "Poly Mini",
+        "price": 165,
+        "alt": "Poly Mini",
+        "image": "/products/mini_front.jpg",
+        "tags": ["poly-mini", "potty", "spcialty"],
+        "gallery": [
+            {"image": "/products/mini_front.jpg", "alt": "Poly Mini front"},
+            {"image": "/products/mini_front_left.jpg", "alt": "Poly Mini left"},
+            {"image": "/products/mini_open.jpg", "alt": "Poly Mini open"}
+        ],
+        "description": "Ever get the request for a portable restroom that can fit inside of a freight elevator but still offers the same privacy as a standard size portable restroom? Look no further than the Poly Mini.",
+        "Features": [
+            "Maximum height low enough to slide or roll into a freight elevator",
+            "60-gallon waste tank which boasts a smooth interior and deep sump",
+            "Toilet seat and cover",
+            "Urinal",
+            "3-roll toilet paper holder with included rod and padlock",
+            "Modular, all-common wall construction makes for easy and inexpensive repairs",
+            "High molecular-weight material with extra UV protection ensures that your units will continue to look new through years of work."
+        ],
+        "Specifications": {
+            "Height w/Plastic Molded Skid": "78.75\" (2000.25 mm)",
+            "Height w/Casters": "80.75\" (2051.05 mm)",
+            "Height w/Casters and Lift Kit": "88\" (2235.2 mm)",
+            "Width": "43\" (1550 mm)",
+            "Depth": "43\" (1550 mm)",
+            "Floor area": "924.5 in² (5,964.5 cm²)",
+            "Tank volume": "60 gal. (227.13L)"
+        },
+        "Overview": "Ever get the request for a portable restroom that can fit inside of a freight elevator but still offers the same privacy as a standard size portable restroom? Look no further than the Poly Mini. A customer created portable restroom designed to keep its maximum height low enough to slide or roll into a freight elevator. The ‘Mini’ boasts the same interior and exterior features as our other standard sized units."
+    },
+    
+    {
+        "name": "Fresh Start Shower",
+        "price": 155,
+        "alt": "Fresh Start Shower",
+        "image": "/products/shower_open_front.jpg",
+        "tags": ["fresh-start-shower", "potty", "spcialty"],
+        "gallery": [
+            {"image": "/products/shower_open_front.jpg", "alt": "Fresh Start Shower front"},
+            {"image": "/products/shower_open_left.jpg", "alt": "Fresh Start Shower left"},
+            {"image": "/products/shower_back.jpg", "alt": "Fresh Start Shower back"}
+        ],
+        "description": "Built within the empty cabana of a standard size portable restroom, the Fresh Start Portable Shower offers the conveniences of a home shower experience in a fully portable package.",
+        "Features": [
+            "Propane-fueled, on-demand water heater.",
+            "Removable hand-held shower nozzle with separate hot and cold water valves.",
+            "A 20-pound propane tank (not included) powers the heater for up to 18 hours of use at a flow rate of 1.4 gallons per minute.",
+            "Vanity shelf.",
+            "Combo Soap dispenser.",
+            "Coat hooks mounted to the door and to each of the right and left walls just inside the door.",
+            "Full-length shower curtain.",
+            "2\" PVC drain pipe exits at the back of the unit, which can be connected to as the customer sees fit.",
+            "High molecular-weight material with extra UV protection ensures that your units will continue to look new through years of work.",
+            "Uses the same cabana components and base as our Axxis restroom, so replacement parts are common with your existing units."
+        ],
+        "Specifications": {
+            "Height w/Keystone Roof": "92\" (2336.8 mm)",
+            "Width": "44\" (1117.6 mm)",
+            "Depth": "48\" (1219.2 mm)",
+            "Door opening": "27” W (685.8 mm)",
+            "Floor area": "1,400 in² (9,032.24 cm²)",
+            "Weight": "154 lbs. (69.85 kg)"
+        },
+        "Overview": "Have you been searching for an affordable response to those customers looking for single-unit showers? Here’s your answer: the Satellite Industries Fresh Start Portable Shower. Built within the empty cabana of a standard size portable restroom, the Fresh Start Portable Shower offers the conveniences of a home shower experience in a fully portable package. Water is heated to an average temperature of 115 degrees by a propane-fueled, on-demand water heater that may be adjusted to suit the user’s comfort level. Available in either cold or heated water configuration."
     }
   ]

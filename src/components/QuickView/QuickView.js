@@ -2,8 +2,7 @@ import React, { useState, useContext } from 'react';
 
 import Button from '../Button';
 import CurrencyFormatter from '../CurrencyFormatter';
-import SizeList from '../SizeList';
-import SwatchList from '../SwatchList';
+
 
 import { generateMockProductData } from '../../helpers/mock';
 import AddItemNotificationContext from '../../context/AddItemNotificationProvider';
@@ -11,15 +10,11 @@ import AddItemNotificationContext from '../../context/AddItemNotificationProvide
 import * as styles from './QuickView.module.css';
 
 const QuickView = (props) => {
-  const { close, buttonTitle = 'Add to Bag' } = props;
-  const sampleProduct = generateMockProductData(1, 'sample')[0];
+  const { close, buttonTitle = 'Rent' } = props;
+  const sampleProduct = generateMockProductData(1, 'potty')[0];
 
   const ctxAddItemNotification = useContext(AddItemNotificationContext);
   const showNotification = ctxAddItemNotification.showNotification;
-  const [activeSwatch, setActiveSwatch] = useState(
-    sampleProduct.colorOptions[0]
-  );
-  const [activeSize, setActiveSize] = useState(sampleProduct.sizeOptions[0]);
 
   const handleAddToBag = () => {
     close();
@@ -42,21 +37,7 @@ const QuickView = (props) => {
           </div>
         </div>
 
-        <div className={styles.sectionContainer}>
-          <SwatchList
-            swatchList={sampleProduct.colorOptions}
-            activeSwatch={activeSwatch}
-            setActiveSwatch={setActiveSwatch}
-          />
-        </div>
-
-        <div className={styles.sectionContainer}>
-          <SizeList
-            sizeList={sampleProduct.sizeOptions}
-            activeSize={activeSize}
-            setActiveSize={setActiveSize}
-          />
-        </div>
+    
 
         <Button onClick={() => handleAddToBag()} fullWidth level={'primary'}>
           {buttonTitle}

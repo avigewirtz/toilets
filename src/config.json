@@ -2,9 +2,7 @@
   "currencyList": [
     { "value": "AUS", "label": "Australia (AUS $)" },
     { "value": "CAD", "label": "Canada (CAD $)" },
-    { "value": "USD", "label": "United States (US $)" },
-    { "value": "EUR", "label": "Germany (EUR €)" },
-    { "value": "HKD", "label": "Hong Kong (HKD $)" }
+    { "value": "USD", "label": "United States (US $)" }
   ],
   "languageList": [
     { "value": "english", "label": "English" },
@@ -13,9 +11,7 @@
   ],
   "social": {
     "facebook": "https://www.facebook.com/MatterDesign/",
-    "instagram": "https://www.instagram.com/p/CVwMlChIWmW",
-    "twitter": "https://twitter.com/hellomatter",
-    "youtube": "https://www.youtube.com/channel/UCEOu94Haa--QmltsSawflXg"
+    "instagram": "https://www.instagram.com/p/CVwMlChIWmW"
   },
   "paymentOptions": {
     "visa": true,
@@ -30,10 +26,7 @@
           "text": "About Us",
           "link": "/about"
         },
-        {
-          "text": "Journal",
-          "link": "/blog"
-        },
+    
         {
           "text": "Privacy Policy",
           "link": "/support#policy"
@@ -52,87 +45,76 @@
           "link": "/support#contact"
         },
         {
-          "text": "Shipping & Returns",
+          "text": "Terms & Conditions",
           "link": "/support#returns"
-        },
-        {
-          "text": "How to use this theme",
-          "link": "/how-to-use"
         }
+    
       ]
     }
   ],
   "headerLinks": [
     {
-      "menuLabel": "Shop",
+      "menuLabel": "Porta Potties",
       "menuLink": "/shop",
       "category": [
         {
-          "categoryLabel": "woman",
+          "categoryLabel": "Standard",
           "submenu": [
             {
-              "menuLabel": "All clothing",
-              "menuLink": "/shop"
+              "menuLabel": "Global",
+              "menuLink": "/product/Global"
             },
             {
-              "menuLabel": "sweatshirts & hoodies",
-              "menuLink": "/shop"
+              "menuLabel": "Axxis",
+              "menuLink": "/product/Axxis"
             },
             {
-              "menuLabel": "jackets",
-              "menuLink": "/shop"
+              "menuLabel": "Tufway",
+              "menuLink": "/product/Axxis"
             },
             {
-              "menuLabel": "trousers",
-              "menuLink": "/shop"
+              "menuLabel": "Maxim 3000",
+              "menuLink": "/product/Maxim3000"
+            },
+            {
+              "menuLabel": "Aspen",
+              "menuLink": "/product/Aspen"
             }
           ]
         },
         {
-          "categoryLabel": "men",
+          "categoryLabel": "Wheelchair Accessible",
           "submenu": [
             {
-              "menuLabel": "All clothing",
-              "menuLink": "/shop"
+              "menuLabel": "Liberty",
+              "menuLink": "/product/Liberty"
             },
             {
-              "menuLabel": "sweatshirts & hoodies",
-              "menuLink": "/shop"
-            },
-            {
-              "menuLabel": "jackets",
-              "menuLink": "/shop"
-            },
-            {
-              "menuLabel": "trousers",
-              "menuLink": "/shop"
-            },
-            {
-              "menuLabel": "pants",
-              "menuLink": "/shop"
+              "menuLabel": "Freedom",
+              "menuLink": "/product/Freedom"
             }
           ]
         },
         {
-          "categoryLabel": "accessories",
+          "categoryLabel": "Specialty",
           "submenu": [
             {
-              "menuLabel": "caps & scarves",
-              "menuLink": "/shop"
+              "menuLabel": "Highrise",
+              "menuLink": "/product/Highrise"
             },
             {
-              "menuLabel": "bags",
-              "menuLink": "/shop"
+              "menuLabel": "Fresh Start Shower",
+              "menuLink": "/product/Fresh Start Shower"
+            },
+            {
+              "menuLabel": "Poly Mini",
+              "menuLink": "/product/Poly Mini"
             }
           ]
         }
       ]
     },
-    {
-      "menuLabel": "journal",
-      "menuLink": "/blog",
-      "category": null
-    },
+
     {
       "menuLabel": "About",
       "menuLink": "/about",
@@ -141,36 +123,11 @@
   ],
   "filters": [
     {
-      "category": "colour",
+      "category": "category",
       "items": [
-        { "name": "Black", "value": true },
-        { "name": "Green", "value": false },
-        { "name": "Dark Blue", "value": false },
-        { "name": "Blue", "value": true },
-        { "name": "Grey", "value": false },
-        { "name": "Red", "value": false }
-      ]
-    },
-
-    {
-      "category": "size",
-      "items": [
-        { "name": "XXS", "value": false },
-        { "name": "XS", "value": false },
-        { "name": "S", "value": false },
-        { "name": "M", "value": false },
-        { "name": "L", "value": false },
-        { "name": "XL", "value": false },
-        { "name": "XXL", "value": false },
-        { "name": "Onesize", "value": false }
-      ]
-    },
-    {
-      "category": "gender",
-      "items": [
-        { "name": "Male", "value": false },
-        { "name": "Female", "value": false },
-        { "name": "Unisex", "value": false }
+        { "name": "Standard", "value": false },
+        { "name": "Wheelchair Accessible", "value": false },
+        { "name": "Spcialty", "value": false }
       ]
     }
   ]

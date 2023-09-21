@@ -6,7 +6,7 @@ import Icon from '../Icons/Icon';
 import CurrencyFormatter from '../CurrencyFormatter';
 
 const ProductCard = (props) => {
-  const [isWishlist, setIsWishlist] = useState(false);
+  
   const {
     image,
     imageAlt,
@@ -19,7 +19,7 @@ const ProductCard = (props) => {
   } = props;
 
   const handleRouteToProduct = () => {
-    navigate('/product/sample');
+    navigate(`/product/${name}`);
   };
 
   const handleQuickView = (e) => {
@@ -27,10 +27,6 @@ const ProductCard = (props) => {
     showQuickView();
   };
 
-  const handleFavorite = (e) => {
-    e.stopPropagation();
-    setIsWishlist(!isWishlist);
-  };
 
   return (
     <div className={styles.root}>
@@ -40,27 +36,7 @@ const ProductCard = (props) => {
         role={'presentation'}
       >
         <img style={{ height: `${height}px` }} src={image} alt={imageAlt}></img>
-        <div
-          className={styles.bagContainer}
-          role={'presentation'}
-          onClick={(e) => handleQuickView(e)}
-        >
-          <Icon symbol={'bagPlus'} />
-        </div>
-        <div
-          className={styles.heartContainer}
-          role={'presentation'}
-          onClick={(e) => handleFavorite(e)}
-        >
-          <Icon symbol={'heart'} />
-          <div
-            className={`${styles.heartFillContainer} ${
-              isWishlist === true ? styles.show : styles.hide
-            }`}
-          >
-            <Icon symbol={'heartFill'}></Icon>
-          </div>
-        </div>
+
       </div>
       <div className={styles.detailsContainer}>
         <span className={styles.productName}>{name}</span>
