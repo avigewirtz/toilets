@@ -22,20 +22,23 @@ const ShopPage = (props) => {
   const [sortOrder, setSortOrder] = useState('default'); // default, lowToHigh, highToLow
 const [showSortDropdown, setShowSortDropdown] = useState(false);
 
-  
+const [resetCounter, setResetCounter] = useState(0);
 
 
 
-  const toggleFilter = (filterType, filterValue) => {
-    setSelectedFilters(prevState => {
-      const newFilters = { ...prevState };
-      const index = newFilters[filterType].indexOf(filterValue);
-      if (index > -1) {
-        newFilters[filterType].splice(index, 1);
-      }
-      return newFilters;
-    });
-  };
+
+const toggleFilter = (filterType, filterValue) => {
+  setSelectedFilters(prevState => {
+    const newFilters = { ...prevState };
+    const index = newFilters[filterType].indexOf(filterValue);
+    if (index > -1) {
+      newFilters[filterType].splice(index, 1);
+    }
+    return newFilters;
+  });
+  setResetCounter(prev => prev + 1); // Increment the counter here
+};
+
   
   const generateChips = () => {
     const chipElements = [];
@@ -82,9 +85,15 @@ const [showSortDropdown, setShowSortDropdown] = useState(false);
   };
 
   useEffect(() => {
+    
     window.addEventListener('keydown', escapeHandler);
     return () => window.removeEventListener('keydown', escapeHandler);
   }, []);
+
+// Reset displayedItemsCount when filters are applied
+useEffect(() => {
+  setDisplayedItemsCount(Math.min(6, filteredProducts.length));
+}, [resetCounter, filteredProducts.length]);
 
   const escapeHandler = (e) => {
     if (e?.keyCode === undefined) return;
@@ -166,7 +175,8 @@ const [showSortDropdown, setShowSortDropdown] = useState(false);
           </div>
           <div className={styles.productContainer}>
             <span className={styles.mobileItemCount}>{totalItems} items</span>
-            <ProductCardGrid data={sortedAndFilteredProducts}></ProductCardGrid>
+            <ProductCardGrid data={sortedAndFilteredProducts.slice(0, displayedItemsCount)}></ProductCardGrid>
+
 
           </div>
           <div className={styles.loadMoreContainer}>
