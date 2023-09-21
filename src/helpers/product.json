@@ -4,7 +4,7 @@
         "price": 75,
         "alt": "Global",
         "image": "/products/global_front.jpg",
-        "tags": ["global", "potty", "Standard"],
+        "tags": ["global", "potty", "Standard", "front-page"],
         "gallery": [
             {"image": "/products/global_front.jpg", "alt": "Global front"},
             {"image": "/products/global_door_open.jpg", "alt": "Global door open"},
@@ -188,7 +188,7 @@
         "price": 125,
         "alt": "Liberty",
         "image": "/products/liberty_front.jpg",
-        "tags": ["liberty", "potty", "Wheelchair Accessible"],
+        "tags": ["liberty", "potty", "Wheelchair Accessible", "front-page"],
         "gallery": [
             {"image": "/products/liberty_front.jpg", "alt": "Liberty front"},
             {"image": "/products/liberty_left.jpg", "alt": "Liberty left"},
@@ -340,7 +340,7 @@
         "price": 155,
         "alt": "Fresh Start Shower",
         "image": "/products/shower_open_front.jpg",
-        "tags": ["fresh-start-shower", "potty", "Spcialty"],
+        "tags": ["fresh-start-shower", "potty", "Spcialty", "front-page"],
         "gallery": [
             {"image": "/products/shower_open_front.jpg", "alt": "Fresh Start Shower front"},
             {"image": "/products/shower_open_left.jpg", "alt": "Fresh Start Shower left"},

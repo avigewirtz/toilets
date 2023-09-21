@@ -16,7 +16,7 @@ import * as styles from './CSS/index.module.css';
 import { Link, navigate } from 'gatsby';
 
 const IndexPage = () => {
-  const newArrivals = generateMockProductData(3, 'shirt');
+  const newArrivals = generateMockProductData(3, 'front-page');
   const blogData = generateMockBlogData(3);
 
   const goToShop = () => {
