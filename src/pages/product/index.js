@@ -4,7 +4,7 @@ import { navigate } from 'gatsby';
 const ProductIndexPage = () => {
   useEffect(() => {
     // Redirect to the /product/sample path
-    navigate('/product/global/');
+    navigate('/product/Global/');
   }, []);
 
   return <React.Fragment />;

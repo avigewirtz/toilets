@@ -28,7 +28,7 @@ const IndexPage = () => {
       {/* Hero Container */}
       <Hero
         maxWidth={'500px'}
-        image={'/group1.png'}
+        image={'/banner1.png'}
         title={'Reliable Porta Potty Rentals'}
         subtitle={'Clean, Sanitary, and Timely Delivered'}
         ctaText={'Rent now'}
