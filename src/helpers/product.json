@@ -4,7 +4,7 @@
         "price": 75,
         "alt": "Global",
         "image": "/products/global_front.jpg",
-        "tags": ["global", "potty", "standard"],
+        "tags": ["global", "potty", "Standard"],
         "gallery": [
             {"image": "/products/global_front.jpg", "alt": "Global front"},
             {"image": "/products/global_door_open.jpg", "alt": "Global door open"},
@@ -36,7 +36,7 @@
         "price": 85,
         "alt": "Axxis",
         "image": "/products/axxis_front.jpg",
-        "tags": ["axxis", "potty", "standard"],
+        "tags": ["axxis", "potty", "Standard"],
         "gallery": [
             {"image": "/products/axxis_front.jpg", "alt": "AXXIS front"},
             {"image": "/products/axxis_front_open_door.jpg", "alt": "AXXIS front door open"},
@@ -81,7 +81,7 @@
         "price": 105,
         "alt": "Tufway",
         "image": "/products/tufway_front.jpg",
-        "tags": ["tufway", "potty", "standard"],
+        "tags": ["tufway", "potty", "Standard"],
         "gallery": [
             {"image": "/products/tufway_front.jpg", "alt": "Tufway front"},
             {"image": "/products/tufway_left.jpg", "alt": "Tufway left"},
@@ -119,7 +119,7 @@
         "price": 105,
         "alt": "ASPEN",
         "image": "/products/Aspen_Front.jpg",
-        "tags": ["aspen", "potty", "standard"],
+        "tags": ["aspen", "potty", "Standard"],
         "gallery": [
             {"image": "/products/Aspen_Front.jpg", "alt": "Aspen front"},
             {"image": "/products/Aspen_Left.jpg", "alt": "Aspen left"},
@@ -154,7 +154,7 @@
         "price": 115,
         "alt": "Maxim 3000",
         "image": "/products/maxim3000_front.jpg",
-        "tags": ["maxim3000", "potty", "standard"],
+        "tags": ["maxim3000", "potty", "Standard"],
         "gallery": [
             {"image": "/products/maxim3000_front.jpg", "alt": "Maxim 3000 front"},
             {"image": "/products/maxim3000_left.jpg", "alt": "Maxim 3000 left"},
@@ -188,7 +188,7 @@
         "price": 125,
         "alt": "Liberty",
         "image": "/products/liberty_front.jpg",
-        "tags": ["liberty", "potty", "wheelchair accessible"],
+        "tags": ["liberty", "potty", "Wheelchair Accessible"],
         "gallery": [
             {"image": "/products/liberty_front.jpg", "alt": "Liberty front"},
             {"image": "/products/liberty_left.jpg", "alt": "Liberty left"},
@@ -225,7 +225,7 @@
         "price": 135,
         "alt": "Freedom",
         "image": "/products/freedom_front.jpg",
-        "tags": ["freedom", "potty", "wheelchair accessible"],
+        "tags": ["freedom", "potty", "Wheelchair Accessible"],
         "gallery": [
             {"image": "/products/freedom_front.jpg", "alt": "Freedom front"},
             {"image": "/products/freedom_left.jpg", "alt": "Freedom left"},
@@ -260,7 +260,7 @@
         "price": 135,
         "alt": "Highrise",
         "image": "/products/highrise_front.jpg",
-        "tags": ["highrise", "potty", "spcialty"],
+        "tags": ["highrise", "potty", "Spcialty"],
         "gallery": [
             {"image": "/products/highrise_front.jpg", "alt": "Highrise front"},
             {"image": "/products/highrise_left.jpg", "alt": "Highrise left"},
@@ -307,7 +307,7 @@
         "price": 165,
         "alt": "Poly Mini",
         "image": "/products/mini_front.jpg",
-        "tags": ["poly-mini", "potty", "spcialty"],
+        "tags": ["poly-mini", "potty", "Spcialty"],
         "gallery": [
             {"image": "/products/mini_front.jpg", "alt": "Poly Mini front"},
             {"image": "/products/mini_front_left.jpg", "alt": "Poly Mini left"},
@@ -340,7 +340,7 @@
         "price": 155,
         "alt": "Fresh Start Shower",
         "image": "/products/shower_open_front.jpg",
-        "tags": ["fresh-start-shower", "potty", "spcialty"],
+        "tags": ["fresh-start-shower", "potty", "Spcialty"],
         "gallery": [
             {"image": "/products/shower_open_front.jpg", "alt": "Fresh Start Shower front"},
             {"image": "/products/shower_open_left.jpg", "alt": "Fresh Start Shower left"},

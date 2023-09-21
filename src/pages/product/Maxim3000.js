@@ -22,7 +22,7 @@ const ProductPage = (props) => {
 
   const [qty, setQty] = useState(0);
   // below is the 4 product suggestions used
-  const suggestions = generateMockProductData(4, 'standard');
+  const suggestions = generateMockProductData(4, 'Standard');
 
   return (
     <Layout>
