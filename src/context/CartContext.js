@@ -13,11 +13,11 @@ export const CartProvider = ({ children }) => {
   }, [cart]);
 
   useEffect(() => {
-    console.log("Current cart:", cart);
+   // console.log("Current cart:", cart);
   }, [cart]);
 
   const addToCart = (product, quantity) => {
-    console.log(`Adding product with id ${product.id} and quantity ${quantity}`);
+   // console.log(`Adding product with id ${product.id} and quantity ${quantity}`);
     
     // Ensure quantity is a number
     const numQuantity = Number(quantity);
@@ -25,7 +25,7 @@ export const CartProvider = ({ children }) => {
     const existingItem = cart.find(item => item.id === product.id);
   
     if (existingItem) {
-      console.log(`Item already exists in cart. Existing quantity: ${existingItem.quantity}, New quantity: ${existingItem.quantity + quantity}`);
+     // console.log(`Item already exists in cart. Existing quantity: ${existingItem.quantity}, New quantity: ${existingItem.quantity + quantity}`);
     
       
       // Ensure existingItem.quantity is a number
@@ -37,7 +37,7 @@ export const CartProvider = ({ children }) => {
           : item
       ));
     } else {
-      console.log("Item is new to the cart. Adding product with id ${product.id} and quantity ${quantity}`");
+     // console.log("Item is new to the cart. Adding product with id ${product.id} and quantity ${quantity}`");
       setCart([...cart, { ...product, quantity: numQuantity }]);
     }
   };
