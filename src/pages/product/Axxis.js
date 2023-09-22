@@ -19,7 +19,7 @@ import AddItemNotificationContext from '../../context/AddItemNotificationProvide
 const ProductPage = (props) => {
   const ctxAddItemNotification = useContext(AddItemNotificationContext);
   const showNotification = ctxAddItemNotification.showNotification;
-  const sampleProduct = generateMockProductData(1, 'Axxis')[0];
+  const sampleProduct = generateMockProductData(1, 'axxis')[0];
   const cartContext = useContext(CartContext);  // Use CartContext
   console.log(cartContext);
 
