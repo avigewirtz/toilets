@@ -21,7 +21,7 @@ const ProductPage = (props) => {
   const showNotification = ctxAddItemNotification.showNotification;
   const sampleProduct = generateMockProductData(1, 'freedom')[0];
   const cartContext = useContext(CartContext);  // Use CartContext
-  const { addToCart } = cartContext;  // Destructure addToCart method
+  console.log(cartContext);
 
   const [qty, setQty] = useState(1);
   // below is the 4 product suggestions used
@@ -45,12 +45,9 @@ const ProductPage = (props) => {
             <div className={styles.details}>
               <h1>{sampleProduct.name}</h1>
 
-
               <div className={styles.priceContainer}>
                 <CurrencyFormatter appendZero amount={sampleProduct.price} />
               </div>
-
-    
 
               <div className={styles.quantityContainer}>
                 <span>Quantity</span>
@@ -63,8 +60,7 @@ const ProductPage = (props) => {
                     onClick={() => {
                       showNotification();
                       const numericQty = Number(qty);
-addToCart(sampleProduct, numericQty);
-  // Add to Cart
+                      cartContext.addToCart(sampleProduct, numericQty); // Add to Cart
                     }}
                     fullWidth
                     level={'primary'}
@@ -72,7 +68,6 @@ addToCart(sampleProduct, numericQty);
                     Add to Cart
                   </Button>
                 </div>
-           
               </div>
 
               <div className={styles.description}>
@@ -80,34 +75,31 @@ addToCart(sampleProduct, numericQty);
               </div>
 
               <div className={styles.informationContainer}>
-              <Accordion
-  type={'plus'}
-  customStyle={styles}
-  title={'Features'}
->
-  <ul className={styles.featuresList}>
-    {sampleProduct.Features.map((feature, index) => (
-      <li key={index}>{feature}</li>
-    ))}
-  </ul>
-</Accordion>
+                <Accordion
+                  type={'plus'}
+                  customStyle={styles}
+                  title={'Features'}
+                >
+                  <ul className={styles.featuresList}>
+                    {sampleProduct.Features.map((feature, index) => (
+                      <li key={index}>{feature}</li>
+                    ))}
+                  </ul>
+                </Accordion>
 
-
-<Accordion
-  type={'plus'}
-  customStyle={styles}
-  title={'Specifications'}
->
-  <ul className={styles.information}>
-    {Object.keys(sampleProduct.Specifications).map((key, index) => (
-      <li key={index}>
-        <strong>{key}:</strong> {sampleProduct.Specifications[key]}
-      </li>
-    ))}
-  </ul>
-</Accordion>
-
-              
+                <Accordion
+                  type={'plus'}
+                  customStyle={styles}
+                  title={'Specifications'}
+                >
+                  <ul className={styles.information}>
+                    {Object.keys(sampleProduct.Specifications).map((key, index) => (
+                      <li key={index}>
+                        <strong>{key}:</strong> {sampleProduct.Specifications[key]}
+                      </li>
+                    ))}
+                  </ul>
+                </Accordion>
               </div>
             </div>
           </div>
