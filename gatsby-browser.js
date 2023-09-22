@@ -10,12 +10,14 @@
 import React from 'react';
 
 import { NotificationProvider } from './src/context/AddItemNotificationProvider';
-import { CartProvider } from './src/context/CartContext'; // Import your CartProvider
+import { CartProvider } from './src/context/CardContext'; // Import your CartProvider
 
 export const wrapRootElement = ({ element }) => (
+  <CartProvider>
   <NotificationProvider>
-    <CartProvider>
+ 
       {element}
-    </CartProvider>
+  
   </NotificationProvider>
+  </CartProvider>
 );
