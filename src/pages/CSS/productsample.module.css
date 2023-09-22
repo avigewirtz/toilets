@@ -26,6 +26,12 @@
     margin-bottom: 16px;
 }
 
+.featuresList {
+    list-style-type: disc;
+    margin-left: 20px;
+    padding-left: 20px;
+  }
+  
 .priceContainer {
     margin: 32px 0px;
 }

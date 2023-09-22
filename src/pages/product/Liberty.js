@@ -73,25 +73,31 @@ const ProductPage = (props) => {
               </div>
 
               <div className={styles.informationContainer}>
-                <Accordion
-                  type={'plus'}
-                  customStyle={styles}
-                  title={'Features'}
-                >
-                  <p className={styles.information}>
-                    {sampleProduct.description}
-                  </p>
-                </Accordion>
-                <Accordion
-                  type={'plus'}
-                  customStyle={styles}
-                  title={'Overview'}
-                >
-                  <p className={styles.information}>
-                    {sampleProduct.description}
-                  </p>
-                </Accordion>
-              
+              <Accordion
+  type={'plus'}
+  customStyle={styles}
+  title={'Features'}
+>
+  <ul className={styles.featuresList}>
+    {sampleProduct.Features.map((feature, index) => (
+      <li key={index}>{feature}</li>
+    ))}
+  </ul>
+</Accordion>
+
+<Accordion
+  type={'plus'}
+  customStyle={styles}
+  title={'Specifications'}
+>
+  <ul className={styles.information}>
+    {Object.keys(sampleProduct.Specifications).map((key, index) => (
+      <li key={index}>
+        <strong>{key}:</strong> {sampleProduct.Specifications[key]}
+      </li>
+    ))}
+  </ul>
+</Accordion>
               </div>
             </div>
           </div>
