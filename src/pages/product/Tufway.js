@@ -21,6 +21,7 @@ const ProductPage = (props) => {
   const showNotification = ctxAddItemNotification.showNotification;
   const sampleProduct = generateMockProductData(1, 'tufway')[0];
   const cartContext = useContext(CartContext);  // Use CartContext
+  console.log(cartContext)
   const { addToCart } = cartContext;  // Destructure addToCart method
 
   const [qty, setQty] = useState(1);
