@@ -296,16 +296,13 @@
             "Depth": "53” (1346 mm)",
             "Tank Volume": "38 gal. (144L)",
             "Weight": "257 lbs. (116 kg) — 307 lbs. (139 kg) (standard to full-feature unit.)",
-            "Exterior with Roof": {
-                "Height": "87.8” (2230 mm)",
-                "Width": "33.5” (851 mm)",
-                "Depth": "54” (1372 mm)"
-            },
-            "Interior": {
-                "Height": "78” (1981 mm)",
-                "Width": "30.1” (764 mm)",
-                "Depth": "51.5” (1308 mm)"
-            }
+            "Exterior with Roof Height": "87.8” (2230 mm)",
+            "Exterior with Roof Width": "33.5” (851 mm)",
+            "Exterior with Roof Depth": "54” (1372 mm)",
+            "Interior Height": "78” (1981 mm)",
+            "Interior Width": "30.1” (764 mm)",
+            "Interior Depth": "51.5” (1308 mm)"
+            
         },
         "Overview": "This restroom is built exclusively for the high rise construction market and offers end users and operators a unique set of features. The Highrise has been designed to be semi or fully private. Adding the roof makes it fully private and a sliding mechanism allows it to be lowered far enough to fit through standard door openings. For additional privacy the urinal is placed inside the restroom. Overall, the Highrise has a tremendous amount of interior space and privacy in situations where it was impossible to have before. The Highrise is sized to go where other restrooms cannot. With the optional roof it is only 33.5 inches wide and 78.2 inches high. This allows the Highrise to be moved through halls and doorways to the place where workers need it most. The casters are sealed to prevent freeze up and can be greased for continued reliability. The frame and floor are made from galvanized metal to prevent damage while lifting and handling. This uniquely designed restroom fills the need for privacy, maneuverability and dependability."
     },
