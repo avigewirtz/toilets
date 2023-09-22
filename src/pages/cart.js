@@ -14,7 +14,6 @@ import * as styles from './CSS/cart.module.css';
 
 const CartPage = (props) => {
   const cartContext = useContext(CartContext);  // Use CartContext
-  const { cart } = cartContext;  // Destructure cart state variable
 
   return (
     <div>
@@ -39,7 +38,7 @@ const CartPage = (props) => {
             <div className={styles.cartContainer}>
               <div className={styles.cartItemsContainer}>
                 { 
-                  cart.map((item, index) => <CartItem key={index} {...item} />) 
+                  cartContext.cart.map((item, index) => <CartItem key={index} {...item} />) 
                   // Replace index with a unique identifier if available
                 }
               </div>
