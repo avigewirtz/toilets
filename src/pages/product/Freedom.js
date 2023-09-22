@@ -12,6 +12,7 @@ import Layout from '../../components/Layout/Layout';
 
 import { generateMockProductData } from '../../helpers/mock';
 import ProductCardGrid from '../../components/ProductCardGrid';
+import CartContext from '../../context/CartContext';
 
 import AddItemNotificationContext from '../../context/AddItemNotificationProvider';
 
@@ -19,8 +20,10 @@ const ProductPage = (props) => {
   const ctxAddItemNotification = useContext(AddItemNotificationContext);
   const showNotification = ctxAddItemNotification.showNotification;
   const sampleProduct = generateMockProductData(1, 'freedom')[0];
+  const cartContext = useContext(CartContext);  // Use CartContext
+  const { addToCart } = cartContext;  // Destructure addToCart method
 
-  const [qty, setQty] = useState(0);
+  const [qty, setQty] = useState(1);
   // below is the 4 product suggestions used
   const suggestions = generateMockProductData(4, 'Wheelchair Accessible');
 
@@ -51,13 +54,18 @@ const ProductPage = (props) => {
 
               <div className={styles.quantityContainer}>
                 <span>Quantity</span>
-                <AdjustItem qty={qty} setQty={setQty} />
+                <AdjustItem qty={qty} setQty={setQty} />  {/* Pass qty and setQty as props */}
               </div>
 
               <div className={styles.actionContainer}>
                 <div className={styles.addToButtonContainer}>
                   <Button
-                    onClick={() => showNotification()}
+                    onClick={() => {
+                      showNotification();
+                      const numericQty = Number(qty);
+addToCart(sampleProduct, numericQty);
+  // Add to Cart
+                    }}
                     fullWidth
                     level={'primary'}
                   >
@@ -69,7 +77,6 @@ const ProductPage = (props) => {
 
               <div className={styles.description}>
                 <p>{sampleProduct.description}</p>
-                {/* <span>Product code: {sampleProduct.productCode}</span> */}
               </div>
 
               <div className={styles.informationContainer}>
@@ -85,6 +92,7 @@ const ProductPage = (props) => {
   </ul>
 </Accordion>
 
+
 <Accordion
   type={'plus'}
   customStyle={styles}
@@ -98,6 +106,7 @@ const ProductPage = (props) => {
     ))}
   </ul>
 </Accordion>
+
               
               </div>
             </div>

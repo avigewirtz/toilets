@@ -12,6 +12,7 @@ import Layout from '../../components/Layout/Layout';
 
 import { generateMockProductData } from '../../helpers/mock';
 import ProductCardGrid from '../../components/ProductCardGrid';
+import CartContext from '../../context/CartContext';
 
 import AddItemNotificationContext from '../../context/AddItemNotificationProvider';
 
@@ -19,8 +20,10 @@ const ProductPage = (props) => {
   const ctxAddItemNotification = useContext(AddItemNotificationContext);
   const showNotification = ctxAddItemNotification.showNotification;
   const sampleProduct = generateMockProductData(1, 'highrise')[0];
+  const cartContext = useContext(CartContext);  // Use CartContext
+  const { addToCart } = cartContext;  // Destructure addToCart method
 
-  const [qty, setQty] = useState(0);
+  const [qty, setQty] = useState(1);
   // below is the 4 product suggestions used
   const suggestions = generateMockProductData(4, 'Specialty');
 
@@ -51,13 +54,18 @@ const ProductPage = (props) => {
 
               <div className={styles.quantityContainer}>
                 <span>Quantity</span>
-                <AdjustItem qty={qty} setQty={setQty} />
+                <AdjustItem qty={qty} setQty={setQty} />  {/* Pass qty and setQty as props */}
               </div>
 
               <div className={styles.actionContainer}>
                 <div className={styles.addToButtonContainer}>
                   <Button
-                    onClick={() => showNotification()}
+                    onClick={() => {
+                      showNotification();
+                      const numericQty = Number(qty);
+addToCart(sampleProduct, numericQty);
+  // Add to Cart
+                    }}
                     fullWidth
                     level={'primary'}
                   >
@@ -69,28 +77,36 @@ const ProductPage = (props) => {
 
               <div className={styles.description}>
                 <p>{sampleProduct.description}</p>
-                {/* <span>Product code: {sampleProduct.productCode}</span> */}
               </div>
 
               <div className={styles.informationContainer}>
-                <Accordion
-                  type={'plus'}
-                  customStyle={styles}
-                  title={'Features'}
-                >
-                  <p className={styles.information}>
-                    {sampleProduct.description}
-                  </p>
-                </Accordion>
-                <Accordion
-                  type={'plus'}
-                  customStyle={styles}
-                  title={'Overview'}
-                >
-                  <p className={styles.information}>
-                    {sampleProduct.description}
-                  </p>
-                </Accordion>
+              <Accordion
+  type={'plus'}
+  customStyle={styles}
+  title={'Features'}
+>
+  <ul className={styles.featuresList}>
+    {sampleProduct.Features.map((feature, index) => (
+      <li key={index}>{feature}</li>
+    ))}
+  </ul>
+</Accordion>
+
+
+<Accordion
+  type={'plus'}
+  customStyle={styles}
+  title={'Specifications'}
+>
+  <ul className={styles.information}>
+    {Object.keys(sampleProduct.Specifications).map((key, index) => (
+      <li key={index}>
+        <strong>{key}:</strong> {sampleProduct.Specifications[key]}
+      </li>
+    ))}
+  </ul>
+</Accordion>
+
               
               </div>
             </div>
@@ -100,7 +116,7 @@ const ProductPage = (props) => {
             <ProductCardGrid
               spacing
               showSlider
-              height={400}
+              height={350}
               columns={4}
               data={suggestions}
             />

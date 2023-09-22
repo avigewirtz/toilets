@@ -1,5 +1,5 @@
+import React, { useContext } from 'react';
 import { Link } from 'gatsby';
-import React from 'react';
 
 import Brand from '../components/Brand';
 import CartItem from '../components/CartItem';
@@ -8,17 +8,13 @@ import Footer from '../components/Footer';
 import Icon from '../components/Icons/Icon';
 import OrderSummary from '../components/OrderSummary';
 
+import CartContext from '../context/CartContext';  // Import CartContext
+
 import * as styles from './CSS/cart.module.css';
 
 const CartPage = (props) => {
-  const sampleCartItem = {
-    image: '/products/pdp1.jpeg',
-    alt: '',
-    name: 'Lambswool Crew Neck Jumper',
-    price: 220,
-    color: 'Anthracite Melange',
-    size: 'XS',
-  };
+  const cartContext = useContext(CartContext);  // Use CartContext
+  const { cart } = cartContext;  // Destructure cart state variable
 
   return (
     <div>
@@ -42,8 +38,10 @@ const CartPage = (props) => {
             <h3>My Bag</h3>
             <div className={styles.cartContainer}>
               <div className={styles.cartItemsContainer}>
-                <CartItem {...sampleCartItem} />
-                <CartItem {...sampleCartItem} />
+                { 
+                  cart.map((item, index) => <CartItem key={index} {...item} />) 
+                  // Replace index with a unique identifier if available
+                }
               </div>
               <OrderSummary />
             </div>

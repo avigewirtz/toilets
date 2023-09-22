@@ -1,5 +1,6 @@
 [
     {
+        "id": "1",
         "name": "Global",
         "price": 75,
         "alt": "Global",
@@ -32,6 +33,7 @@
     },
     
     {
+        "id": "2",
         "name": "Axxis",
         "price": 85,
         "alt": "Axxis",
@@ -77,6 +79,7 @@
     },
 
     {
+        "id": "3",
         "name": "Tufway",
         "price": 105,
         "alt": "Tufway",
@@ -115,6 +118,7 @@
 
 
     {
+        "id": "4",
         "name": "Aspen",
         "price": 105,
         "alt": "ASPEN",
@@ -150,6 +154,7 @@
     },
 
     {
+        "id": "5",
         "name": "Maxim 3000",
         "price": 115,
         "alt": "Maxim 3000",
@@ -184,6 +189,7 @@
     },
 
     {
+        "id": "6",
         "name": "Liberty",
         "price": 125,
         "alt": "Liberty",
@@ -221,6 +227,7 @@
     },
     
     {
+        "id": "7",
         "name": "Freedom",
         "price": 135,
         "alt": "Freedom",
@@ -256,6 +263,7 @@
     },
     
     {
+        "id": "8",
         "name": "Highrise",
         "price": 135,
         "alt": "Highrise",
@@ -303,6 +311,7 @@
     },
     
     {
+        "id": "9",
         "name": "Poly Mini",
         "price": 165,
         "alt": "Poly Mini",
@@ -336,6 +345,7 @@
     },
     
     {
+        "id": "10",
         "name": "Fresh Start Shower",
         "price": 155,
         "alt": "Fresh Start Shower",
