@@ -12,7 +12,6 @@ import Layout from '../../components/Layout/Layout';
 
 import { generateMockProductData } from '../../helpers/mock';
 import ProductCardGrid from '../../components/ProductCardGrid';
-import CartContext from '../../context/CartContext';
 
 import AddItemNotificationContext from '../../context/AddItemNotificationProvider';
 
@@ -20,10 +19,8 @@ const ProductPage = (props) => {
   const ctxAddItemNotification = useContext(AddItemNotificationContext);
   const showNotification = ctxAddItemNotification.showNotification;
   const sampleProduct = generateMockProductData(1, 'tufway')[0];
-  const cartContext = useContext(CartContext);  // Use CartContext
-  const { addToCart } = cartContext;  // Destructure addToCart method
 
-  const [qty, setQty] = useState(1);
+  const [qty, setQty] = useState(0);
   // below is the 4 product suggestions used
   const suggestions = generateMockProductData(4, 'Standard');
 
@@ -54,18 +51,13 @@ const ProductPage = (props) => {
 
               <div className={styles.quantityContainer}>
                 <span>Quantity</span>
-                <AdjustItem qty={qty} setQty={setQty} />  {/* Pass qty and setQty as props */}
+                <AdjustItem qty={qty} setQty={setQty} />
               </div>
 
               <div className={styles.actionContainer}>
                 <div className={styles.addToButtonContainer}>
                   <Button
-                    onClick={() => {
-                      showNotification();
-                      const numericQty = Number(qty);
-addToCart(sampleProduct, numericQty);
-  // Add to Cart
-                    }}
+                    onClick={() => showNotification()}
                     fullWidth
                     level={'primary'}
                   >
@@ -77,6 +69,7 @@ addToCart(sampleProduct, numericQty);
 
               <div className={styles.description}>
                 <p>{sampleProduct.description}</p>
+                {/* <span>Product code: {sampleProduct.productCode}</span> */}
               </div>
 
               <div className={styles.informationContainer}>
@@ -92,7 +85,6 @@ addToCart(sampleProduct, numericQty);
   </ul>
 </Accordion>
 
-
 <Accordion
   type={'plus'}
   customStyle={styles}
@@ -106,7 +98,6 @@ addToCart(sampleProduct, numericQty);
     ))}
   </ul>
 </Accordion>
-
               
               </div>
             </div>
