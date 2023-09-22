@@ -21,7 +21,7 @@ const Header = (prop) => {
   const [showMenu, setShowMenu] = useState(true);
   const [menu, setMenu] = useState();
   const [activeMenu, setActiveMenu] = useState();
-  const bannerMessage = 'Proudly servicing all 50 states';
+  const bannerMessage = 'Proudly Servicing All 50 States';
 
   const handleHover = (navObject) => {
     if (navObject.category) {

@@ -106,7 +106,7 @@ const ProductPage = (props) => {
             <ProductCardGrid
               spacing
               showSlider
-              height={400}
+              height={350}
               columns={4}
               data={suggestions}
             />
