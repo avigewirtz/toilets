@@ -13,11 +13,10 @@ import { NotificationProvider } from './src/context/AddItemNotificationProvider'
 import { CartProvider } from './src/context/CardContext'; // Import your CartProvider
 
 export const wrapRootElement = ({ element }) => (
-  <CartProvider>
   <NotificationProvider>
- 
+    <CartProvider>
       {element}
-  
+    </CartProvider>
   </NotificationProvider>
-  </CartProvider>
+  
 );
