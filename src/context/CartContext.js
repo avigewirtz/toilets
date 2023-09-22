@@ -44,8 +44,10 @@ export const CartProvider = ({ children }) => {
   
 
   const removeFromCart = (itemId) => {
+    console.log('Removing item with ID:', itemId);
     setCart(cart.filter(item => item.id !== itemId));
   };
+  
 
   const adjustQuantity = (itemId, newQuantity) => {
     setCart(cart.map(item =>

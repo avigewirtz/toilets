@@ -13,11 +13,14 @@ import * as styles from './CartItem.module.css';
 const CartItem = (props) => {
   const { removeFromCart, adjustQuantity, cart } = useContext(CartContext);
   const [showQuickView, setShowQuickView] = useState(false);
-  const { image, alt, color, name, size, price, id } = props;
+  const { image, alt, name, price, id } = props;  // Removed color and size
 
   const currentItem = cart.find(item => item.id === id);
   const currentQuantity = currentItem ? currentItem.quantity : 0;
-
+  const handleRemoveClick = () => {
+    console.log('Remove button clicked for item:', name, 'with ID:', id);
+    removeFromCart(id);
+  };
   return (
     <div className={styles.root}>
       <div
@@ -29,17 +32,14 @@ const CartItem = (props) => {
       </div>
       <div className={styles.itemContainer}>
         <span className={styles.name}>{name}</span>
-        <div className={styles.metaContainer}>
-          <span>Color: {color}</span>
-          <span>Size: {size}</span>
-        </div>
-        <div
-          className={styles.editContainer}
-          role={'presentation'}
-          onClick={() => setShowQuickView(true)}
-        >
-          <span>Edit</span>
-        </div>
+        {/* Removed metaContainer for color and size */}
+      </div>
+      <div
+        className={styles.editContainer}
+        role={'presentation'}
+        onClick={() => setShowQuickView(true)}
+      >
+        <span>Edit</span>
       </div>
       <div className={styles.adjustItemContainer}>
         <AdjustItem qty={currentQuantity} setQty={(newQuantity) => adjustQuantity(id, newQuantity)} />
@@ -48,7 +48,7 @@ const CartItem = (props) => {
         <CurrencyFormatter amount={price} appendZero />
       </div>
       <div className={styles.removeContainer}>
-        <RemoveItem onRemove={() => removeFromCart(id)} />
+      <RemoveItem onRemove={handleRemoveClick} />
       </div>
       <Drawer visible={showQuickView} close={() => setShowQuickView(false)}>
         <QuickView close={() => setShowQuickView(false)} />
@@ -56,5 +56,6 @@ const CartItem = (props) => {
     </div>
   );
 };
+
 
 export default CartItem;
