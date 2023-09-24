@@ -12,7 +12,7 @@ const OrderConfirmPage = (props) => {
         <div className={styles.root}>
           <h1>Thank You!</h1>
           <p>
-            We are now processing your order. If you have any concerns feel free
+            We are now processing your order and will be in touch shortly. If you have any concerns, feel free
             to email us at customerservice@example.com
           </p>
           <div className={styles.actionContainer}>
@@ -34,7 +34,7 @@ const OrderConfirmPage = (props) => {
             <ActionCard
               title={'FAQs'}
               icon={'question'}
-              subtitle={'Check out FAQs page'}
+              subtitle={'Check out our FAQs page'}
               link={'/faq'}
             />
 
