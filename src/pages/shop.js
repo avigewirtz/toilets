@@ -189,7 +189,7 @@ useEffect(() => {
           </div>
         </Container>
       </div>
-      <LayoutOption />
+      {/* <LayoutOption /> */}
     </Layout>  
   );
 };
