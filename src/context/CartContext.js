@@ -6,6 +6,7 @@ export const CartProvider = ({ children }) => {
   // Initialize cart from localStorage if available
   const initialCart = JSON.parse(localStorage.getItem('cart')) || [];
   const [cart, setCart] = useState(initialCart);
+  const [lastAddedItem, setLastAddedItem] = useState(null);
 
   // Use useEffect to update localStorage whenever the cart changes
   useEffect(() => {
@@ -40,6 +41,7 @@ export const CartProvider = ({ children }) => {
      // console.log("Item is new to the cart. Adding product with id ${product.id} and quantity ${quantity}`");
       setCart([...cart, { ...product, quantity: numQuantity }]);
     }
+    setLastAddedItem({ ...product, quantity });
   };
   
 
@@ -58,7 +60,7 @@ export const CartProvider = ({ children }) => {
   };
 
   return (
-    <CartContext.Provider value={{ cart, addToCart, removeFromCart, adjustQuantity }}>
+    <CartContext.Provider value={{ cart, addToCart, removeFromCart, adjustQuantity, lastAddedItem }}>
       {children}
     </CartContext.Provider>
   );

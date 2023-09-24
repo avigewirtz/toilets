@@ -58,9 +58,10 @@ const ProductPage = (props) => {
                 <div className={styles.addToButtonContainer}>
                   <Button
                     onClick={() => {
-                      showNotification();
+                      
                       const numericQty = Number(qty);
                       cartContext.addToCart(sampleProduct, numericQty); // Add to Cart
+                      showNotification();
                     }}
                     fullWidth
                     level={'primary'}

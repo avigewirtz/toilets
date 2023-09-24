@@ -164,7 +164,7 @@
             {"image": "/products/maxim3000_front.jpg", "alt": "Maxim 3000 front"},
             {"image": "/products/maxim3000_left.jpg", "alt": "Maxim 3000 left"},
             {"image": "/products/maxim3000_right.jpg", "alt": "Maxim 3000 right"},
-            {"image": "/products/maxim3000_door_open.jpg", "alt": "Maxim 3000 door open"},
+            {"image": "/products/maxim3000_open_door.jpg", "alt": "Maxim 3000 door open"},
             {"image": "/products/maxim3000_bird.jpg", "alt": "Maxim 3000 bird"}
         ],
         "description": "The most outstanding features of the Maxim 3000™ are its ultra-smooth walls and spacious interior. With no ledges to collect dust, debris or waste, the Maxim 3000 is able to maintain a clean appearance long after a service call.",
@@ -268,7 +268,7 @@
         "price": 135,
         "alt": "Highrise",
         "image": "/products/highrise_front.jpg",
-        "tags": ["highrise", "potty", "Spcialty"],
+        "tags": ["highrise", "potty", "Specialty"],
         "gallery": [
             {"image": "/products/highrise_front.jpg", "alt": "Highrise front"},
             {"image": "/products/highrise_left.jpg", "alt": "Highrise left"},
@@ -313,7 +313,7 @@
         "price": 165,
         "alt": "Poly Mini",
         "image": "/products/mini_front.jpg",
-        "tags": ["poly-mini", "potty", "Spcialty"],
+        "tags": ["poly-mini", "potty", "Specialty"],
         "gallery": [
             {"image": "/products/mini_front.jpg", "alt": "Poly Mini front"},
             {"image": "/products/mini_front_left.jpg", "alt": "Poly Mini left"},
@@ -347,7 +347,7 @@
         "price": 155,
         "alt": "Fresh Start Shower",
         "image": "/products/shower_open_front.jpg",
-        "tags": ["fresh-start-shower", "potty", "Spcialty", "front-page"],
+        "tags": ["fresh-start-shower", "potty", "Specialty", "front-page"],
         "gallery": [
             {"image": "/products/shower_open_front.jpg", "alt": "Fresh Start Shower front"},
             {"image": "/products/shower_open_left.jpg", "alt": "Fresh Start Shower left"},

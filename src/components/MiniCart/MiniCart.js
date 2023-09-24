@@ -84,7 +84,7 @@ const MiniCart = (props) => {
             </span>
           </div>
           <span className={styles.taxNotes}>
-            Taxes and shipping will be calculated at checkout
+            Taxes will be calculated at checkout
           </span>
           <Button onClick={() => navigate('/cart')} level={'primary'} fullWidth>
             checkout
@@ -99,8 +99,10 @@ const MiniCart = (props) => {
 };
 
 // Function to calculate the total price of items in the cart
+// Function to calculate the total price of items in the cart
 const calculateTotal = (cart) => {
-  return cart.reduce((total, item) => total + item.price, 0);
+  return cart.reduce((total, item) => total + (item.price * item.quantity), 0);
 };
+
 
 export default MiniCart;

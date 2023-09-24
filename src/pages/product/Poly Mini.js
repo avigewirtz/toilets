@@ -25,7 +25,9 @@ const ProductPage = (props) => {
 
   const [qty, setQty] = useState(1);
   // below is the 4 product suggestions used
-  const suggestions = generateMockProductData(4, 'Specialty');
+  const allSuggestions = generateMockProductData(4, 'Specialty');
+const suggestions = allSuggestions.filter(product => !product.tags.includes('poly-mini'));
+
 
   return (
     <Layout>
@@ -58,9 +60,10 @@ const ProductPage = (props) => {
                 <div className={styles.addToButtonContainer}>
                   <Button
                     onClick={() => {
-                      showNotification();
+                      
                       const numericQty = Number(qty);
                       cartContext.addToCart(sampleProduct, numericQty); // Add to Cart
+                      showNotification();
                     }}
                     fullWidth
                     level={'primary'}

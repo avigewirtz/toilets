@@ -26,7 +26,8 @@ const CartItem = (props) => {
       <div
         className={styles.imageContainer}
         role={'presentation'}
-        onClick={() => navigate('/product/Global')}
+        onClick={() => navigate(`/product/${encodeURIComponent(name)}`)}
+        // Navigate based on product name
       >
         <img src={image} alt={alt}></img>
       </div>

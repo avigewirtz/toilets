@@ -1,21 +1,22 @@
-import React, { useState, useEffect, createRef } from 'react';
-import { Link} from 'gatsby';
-
+import React, { useState, useEffect, useContext } from 'react';
+import { Link } from 'gatsby';
 import { isAuth } from '../../helpers/general';
-
 import AddNotification from '../AddNotification';
 import Brand from '../Brand';
 import Container from '../Container';
 import Config from '../../config.json';
 import Drawer from '../Drawer';
 import ExpandedMenu from '../ExpandedMenu';
-//  import FormInputField from '../FormInputField/FormInputField';
 import Icon from '../Icons/Icon';
 import MiniCart from '../MiniCart';
 import MobileNavigation from '../MobileNavigation';
+import CartContext from '../../context/CartContext'; // Import the CartContext
 import * as styles from './Header.module.css';
 
 const Header = (prop) => {
+  const cartContext = useContext(CartContext); // Get the context object
+const { cart } = cartContext || {}; // Destructure only if cartContext is defined
+
   const [showMiniCart, setShowMiniCart] = useState(false);
   const [mobileMenu, setMobileMenu] = useState(false);
   const [showMenu, setShowMenu] = useState(true);
@@ -27,7 +28,6 @@ const Header = (prop) => {
     if (navObject.category) {
       setShowMenu(true);
       setMenu(navObject.category);
-     
     } else {
       setMenu(undefined);
     }
@@ -101,19 +101,22 @@ const Header = (prop) => {
             >
               <Icon symbol={'user'}></Icon>
             </Link>
+
+
             <button
-              aria-label="Cart"
-              className={`${styles.iconButton} ${styles.iconContainer} ${styles.bagIconContainer}`}
-              onClick={() => {
-                setShowMiniCart(true);
-                setMobileMenu(false);
-              }}
-            >
-              <Icon symbol={'bag'}></Icon>
-              <div className={styles.bagNotification}>
-                <span>1</span>
-              </div>
-            </button>
+        aria-label="Cart"
+        className={`${styles.iconButton} ${styles.iconContainer} ${styles.bagIconContainer}`}
+        onClick={() => {
+          setShowMiniCart(true);
+          setMobileMenu(false);
+        }}
+      >
+        <Icon symbol={'bag'}></Icon>
+        <div className={styles.bagNotification}>
+        <span>{cart ? cart.reduce((total, item) => total + item.quantity, 0) : 0}</span>
+
+        </div>
+      </button>
             <div className={styles.notificationContainer}>
               <AddNotification openCart={() => setShowMiniCart(true)} />
             </div>

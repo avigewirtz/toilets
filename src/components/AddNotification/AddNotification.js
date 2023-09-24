@@ -1,6 +1,6 @@
 import { Link } from 'gatsby';
 import React, { useContext } from 'react';
-
+import CartContext from '../../context/CartContext'; // Import CartContext
 import AddItemNotificationContext from '../../context/AddItemNotificationProvider';
 
 import Button from '../Button';
@@ -9,18 +9,12 @@ import Icon from '../Icons/Icon';
 import * as styles from './AddNotification.module.css';
 
 const AddNotification = (props) => {
-  const sampleCartItem = {
-    image: '/products/pdp1.jpeg',
-    alt: '',
-    name: 'Lambswool Crew Neck Jumper',
-    price: 220,
-    color: 'Anthracite Melange',
-    size: 'XS',
-  };
-
+  const cartContext = useContext(CartContext); // Use CartContext
+  const cart = cartContext?.cart; // Optional chaining just to be safe
   const ctxAddItemNotification = useContext(AddItemNotificationContext);
   const showNotif = ctxAddItemNotification.state?.open;
-
+  const lastAddedItem = cartContext?.lastAddedItem; // Access lastAddedItem from CartContext
+  const itemCount = cart ? cart.reduce((total, item) => total + item.quantity, 0) : 0; 
   return (
     <div
       className={`${styles.root} ${
@@ -35,19 +29,21 @@ const AddNotification = (props) => {
       </div>
 
       <div className={styles.newItemContainer}>
-        <div className={styles.imageContainer}>
-          <img alt={sampleCartItem.alt} src={sampleCartItem.image} />
-        </div>
-        <div className={styles.detailContainer}>
-          <span className={styles.name}>{sampleCartItem.name}</span>
-          <span className={styles.meta}>Color: {sampleCartItem.color}</span>
-          <span className={styles.meta}>Size: {sampleCartItem.size}</span>
-        </div>
+        { lastAddedItem && (
+          <>
+            <div className={styles.imageContainer}>
+              <img alt={lastAddedItem.alt} src={lastAddedItem.image} />
+            </div>
+            <div className={styles.detailContainer}>
+              <span className={styles.name}>{lastAddedItem.name}</span>
+            </div>
+          </>
+        )}
       </div>
 
       <div className={styles.actionContainer}>
         <Button onClick={props.openCart} level={'secondary'}>
-          view my bag (1)
+        {`View my bag (${itemCount})`} {/* Display the number of items dynamically */} {/* You might also want to make this dynamic */}
         </Button>
         <Button level="primary" href="/cart">
           checkout

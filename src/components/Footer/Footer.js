@@ -132,18 +132,18 @@ const Footer = (prop) => {
           </div>
         </div>
       </Container>
-      <div className={styles.contentBottomContainer}>
+      {/* <div className={styles.contentBottomContainer}>
         <Container size={'large'} spacing={'min'}>
-          <div className={styles.contentBottom}>
-            <div className={styles.settings}>
+          <div className={styles.contentBottom}> */}
+            {/* <div className={styles.settings}>
               <Dropdown
                 label={'Country/Region'}
                 optionList={Config.currencyList}
               />
               <Dropdown label={'Language'} optionList={Config.languageList} />
-            </div>
-            <div className={styles.copyrightContainer}>
-              <div className={styles.creditCardContainer}>
+            </div> */}
+            {/* <div className={styles.copyrightContainer}> */}
+              {/* <div className={styles.creditCardContainer}>
                 {Config.paymentOptions.amex && (
                   <img
                     className={styles.amexSize}
@@ -165,8 +165,8 @@ const Footer = (prop) => {
                     alt={'visa'}
                   ></img>
                 )}
-              </div>
-              <span>
+              </div> */}
+              {/* <span>
                 {new Date().getFullYear()} (c) . Built by{' '}
                 <Button target={true} href="https://www.matterdesign.com.au/">
                   Matter.
@@ -175,11 +175,11 @@ const Footer = (prop) => {
                 <Button target={true} href="https://jamm.matter.design/">
                   JAMM.™
                 </Button>
-              </span>
-            </div>
-          </div>
+              </span> */}
+            {/* </div> */}
+          {/* </div>
         </Container>
-      </div>
+      </div> */}
     </div>
   );
 };
