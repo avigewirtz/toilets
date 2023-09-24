@@ -25,7 +25,8 @@ const ProductPage = (props) => {
 
   const [qty, setQty] = useState(1);
   // below is the 4 product suggestions used
-  const suggestions = generateMockProductData(4, 'Standard');
+  const allSuggestions = generateMockProductData(5, 'Standard');
+  const suggestions = allSuggestions.filter(product => !product.tags.includes('global'));
 
   return (
     <Layout>
