@@ -1,12 +1,33 @@
 const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
 
 exports.handler = async (event, context) => {
+  // Check HTTP method
   if (event.httpMethod !== "POST") {
     return { statusCode: 405, body: "Method Not Allowed" };
   }
 
-  const { amount } = JSON.parse(event.body);
+  // Check if STRIPE_SECRET_KEY is set
+  if (!process.env.STRIPE_SECRET_KEY) {
+    return { statusCode: 500, body: "STRIPE_SECRET_KEY not set" };
+  }
 
+  // Parse amount from request body
+  let amount;
+  try {
+    ({ amount } = JSON.parse(event.body));
+  } catch (err) {
+    return {
+      statusCode: 400,
+      body: `Invalid request body: ${err.message}`,
+    };
+  }
+
+  // Validate amount
+  if (!amount || typeof amount !== "number") {
+    return { statusCode: 400, body: "Invalid amount" };
+  }
+
+  // Create Stripe session
   try {
     const session = await stripe.checkout.sessions.create({
       payment_method_types: ["card"],
@@ -34,7 +55,12 @@ exports.handler = async (event, context) => {
   } catch (err) {
     return {
       statusCode: 500,
-      body: JSON.stringify({ error: err.message }),
+      body: JSON.stringify({
+        error: err.message,
+        type: err.type,
+        code: err.code,
+        param: err.param,
+      }),
     };
   }
 };
