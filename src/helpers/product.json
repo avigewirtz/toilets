@@ -38,6 +38,7 @@
         "price": 85,
         "alt": "Axxis",
         "image": "/products/axxis_front.jpg",
+        "pdfUrl": "/products/global.pdf",
         "tags": ["axxis", "potty", "Standard"],
         "gallery": [
             {"image": "/products/axxis_front.jpg", "alt": "AXXIS front"},
@@ -45,7 +46,7 @@
             {"image": "/products/axxis_front_right.jpg", "alt": "AXXIS front right"},
             {"image": "/products/axxis_front_left.jpg ", "alt": "AXXIS front left"}
         ],
-        "description": "Satellite Industries takes pride in listening and learning from our customers. With a team of industry experts, we are excited to deliver what we consider to be a significant innovation to our line of portable restrooms and the industry as a whole. Introducing the Axxis. Featuring revolutionary, self-closing hinges, a heavy-duty rotary latch, deep ambidextrous door pull and a re-engineered door frame.",
+        "description": "Featuring revolutionary, self-closing hinges, a heavy-duty rotary latch, deep ambidextrous door pull, and a re-engineered door frame, the Axxis delivers a significant innovation to portable restrooms.",
         "Features": [
             "Outdoor rated materials and molded polymer construction ensure years of use.",
             "Long life stainless steel hinges with separate door closure springs.",

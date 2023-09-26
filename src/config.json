@@ -119,6 +119,12 @@
       "menuLabel": "About",
       "menuLink": "/about",
       "category": null
+    },
+    {
+      "menuLabel": "Support",
+      "menuLink": "",
+      "category": null
+
     }
   ],
   "filters": [

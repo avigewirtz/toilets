@@ -1,5 +1,7 @@
 import React, { useState, useContext } from 'react';
 import * as styles from '../CSS/productsample.module.css';
+import DatePicker from 'react-datepicker';
+import 'react-datepicker/dist/react-datepicker.css';
 
 import Accordion from '../../components/Accordion';
 import AdjustItem from '../../components/AdjustItem';
@@ -9,6 +11,9 @@ import Container from '../../components/Container';
 import CurrencyFormatter from '../../components/CurrencyFormatter';
 import Gallery from '../../components/Gallery';
 import Layout from '../../components/Layout/Layout';
+import RentalDates from '../../components/RentalDates';  
+import DeliveryAddress from '../../components/DeliveryAddress';
+
 
 import { generateMockProductData } from '../../helpers/mock';
 import ProductCardGrid from '../../components/ProductCardGrid';
@@ -21,12 +26,13 @@ const ProductPage = (props) => {
   const showNotification = ctxAddItemNotification.showNotification;
   const sampleProduct = generateMockProductData(1, 'aspen')[0];
   const cartContext = useContext(CartContext);  // Use CartContext
-  console.log(cartContext);
+  // console.log(cartContext);
 
   const [qty, setQty] = useState(1);
   // below is the 4 product suggestions used
   const allSuggestions = generateMockProductData(5, 'Standard');
   const suggestions = allSuggestions.filter(product => !product.tags.includes('aspen'));
+
 
   return (
     <Layout>
@@ -46,9 +52,12 @@ const ProductPage = (props) => {
             <div className={styles.details}>
               <h1>{sampleProduct.name}</h1>
 
-              <div className={styles.priceContainer}>
+              {/* <div className={styles.priceContainer}>
                 <CurrencyFormatter appendZero amount={sampleProduct.price} />
-              </div>
+              </div> */}
+
+              <RentalDates />
+              <DeliveryAddress />
 
               <div className={styles.quantityContainer}>
                 <span>Quantity</span>

@@ -22,11 +22,20 @@ const ProductPage = (props) => {
   const sampleProduct = generateMockProductData(1, 'axxis')[0];
   const cartContext = useContext(CartContext);  // Use CartContext
   console.log(cartContext);
-
+  const pdfUrl = sampleProduct.pdfUrl;
   const [qty, setQty] = useState(1);
   // below is the 4 product suggestions used
   const allSuggestions = generateMockProductData(5, 'Standard');
   const suggestions = allSuggestions.filter(product => !product.tags.includes('axxis'));
+
+  const handlePdfDownload = () => {
+    // Create an invisible anchor element
+    const link = document.createElement('a');
+    link.href = pdfUrl;
+    link.target = '_blank'; // Open in a new tab
+    link.download = 'sampleProduct.pdf'; // Set the download attribute
+    link.click(); // Simulate a click to start the download
+  };
 
   return (
     <Layout>
@@ -102,6 +111,18 @@ const ProductPage = (props) => {
                     ))}
                   </ul>
                 </Accordion>
+
+                <Accordion
+        type={'plus'}
+        customStyle={styles}
+        title={'Download/Media'}
+      >
+        <div className={styles.downloadPdfContainer}>
+          <button onClick={handlePdfDownload} className={styles.downloadPdfButton}>
+            Download PDF
+          </button>
+        </div>
+      </Accordion>
               </div>
             </div>
           </div>

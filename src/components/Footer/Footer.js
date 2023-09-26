@@ -71,7 +71,7 @@ const Footer = (prop) => {
               <div className={styles.newsLetterContent}>
                 <span className={styles.linkTitle}>Newsletter</span>
                 <p className={styles.promoMessage}>
-                  Get 15% off your first purchase! Plus, be the first to know
+                  Get 10% off your first rental! Plus, be the first to know
                   about sales, new product launches and exclusive offers!
                 </p>
                 <form
@@ -87,7 +87,7 @@ const Footer = (prop) => {
                   />
                 </form>
                 <div className={styles.socialContainer}>
-                  {Config.social.youtube && (
+                  {/* {Config.social.youtube && (
                     <div
                       onClick={() => handleSocialClick('youtube')}
                       role={'presentation'}
@@ -95,7 +95,7 @@ const Footer = (prop) => {
                     >
                       <Icon symbol={'youtube'}></Icon>
                     </div>
-                  )}
+                  )} */}
 
                   {Config.social.instagram && (
                     <div
@@ -117,7 +117,7 @@ const Footer = (prop) => {
                     </div>
                   )}
 
-                  {Config.social.twitter && (
+                  {/* {Config.social.twitter && (
                     <div
                       onClick={() => handleSocialClick('twitter')}
                       role={'presentation'}
@@ -125,7 +125,7 @@ const Footer = (prop) => {
                     >
                       <Icon symbol={'twitter'}></Icon>
                     </div>
-                  )}
+                  )} */}
                 </div>
               </div>
             </div>

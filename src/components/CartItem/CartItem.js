@@ -40,7 +40,7 @@ const CartItem = (props) => {
         role={'presentation'}
         onClick={() => setShowQuickView(true)}
       >
-        <span>Edit</span>
+        {/* <span>Edit</span> */}
       </div>
       <div className={styles.adjustItemContainer}>
         <AdjustItem qty={currentQuantity} setQty={(newQuantity) => adjustQuantity(id, newQuantity)} />

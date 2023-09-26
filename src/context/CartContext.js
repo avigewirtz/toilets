@@ -18,31 +18,50 @@ export const CartProvider = ({ children }) => {
   }, [cart]);
 
   const addToCart = (product, quantity) => {
-   // console.log(`Adding product with id ${product.id} and quantity ${quantity}`);
-    
+  
     // Ensure quantity is a number
     const numQuantity = Number(quantity);
   
     const existingItem = cart.find(item => item.id === product.id);
   
     if (existingItem) {
-     // console.log(`Item already exists in cart. Existing quantity: ${existingItem.quantity}, New quantity: ${existingItem.quantity + quantity}`);
-    
-      
-      // Ensure existingItem.quantity is a number
-      const existingQuantity = Number(existingItem.quantity);
-      
+      // Replace the existing quantity with the new quantity
       setCart(cart.map(item =>
         item.id === product.id
-          ? { ...item, quantity: existingQuantity + numQuantity }
+          ? { ...item, quantity: numQuantity }
           : item
       ));
     } else {
-     // console.log("Item is new to the cart. Adding product with id ${product.id} and quantity ${quantity}`");
       setCart([...cart, { ...product, quantity: numQuantity }]);
     }
     setLastAddedItem({ ...product, quantity });
   };
+  // const addToCart = (product, quantity) => {
+  //  // console.log(`Adding product with id ${product.id} and quantity ${quantity}`);
+    
+  //   // Ensure quantity is a number
+  //   const numQuantity = Number(quantity);
+  
+  //   const existingItem = cart.find(item => item.id === product.id);
+  
+  //   if (existingItem) {
+  //    // console.log(`Item already exists in cart. Existing quantity: ${existingItem.quantity}, New quantity: ${existingItem.quantity + quantity}`);
+    
+      
+  //     // Ensure existingItem.quantity is a number
+  //     const existingQuantity = Number(existingItem.quantity);
+      
+  //     setCart(cart.map(item =>
+  //       item.id === product.id
+  //         ? { ...item, quantity: existingQuantity + numQuantity }
+  //         : item
+  //     ));
+  //   } else {
+  //    // console.log("Item is new to the cart. Adding product with id ${product.id} and quantity ${quantity}`");
+  //     setCart([...cart, { ...product, quantity: numQuantity }]);
+  //   }
+  //   setLastAddedItem({ ...product, quantity });
+  // };
   
 
   const removeFromCart = (itemId) => {
