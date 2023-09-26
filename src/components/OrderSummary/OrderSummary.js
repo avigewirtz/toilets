@@ -17,7 +17,7 @@ const OrderSummary = ({ totalPrice }) => {
     const stripe = await stripePromise;
 
     // Fetch the session ID from our Netlify Function
-    const session = await fetch("/netlify/functions/create-checkout-session", {
+    const session = await fetch("/.netlify/functions/create-checkout-session", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
