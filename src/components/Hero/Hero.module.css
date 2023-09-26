@@ -15,13 +15,13 @@
     display: flex;
     flex-direction: column;
     position: absolute;
-    left: 200px;  /* You can adjust this value */
-    top: 22%; 
+    left: 375px;  /* You can adjust this value */
+    top: 30%; 
     justify-content: center;
     align-items: center;  /* Added this line to center align the items vertically */
     color: var(--standard-black);
     max-width: 500px;
-    gap: 35px;
+    gap: 40px;
 }
 
 .title {
@@ -67,13 +67,13 @@
     }
 
     .title {
-        font-size: 24px;
-        line-height: 30px;
+        font-size: 42px;
+        line-height: 50px;
     }
 
     .subtitle {
-        font-size: 10px;
-        line-height: 14px;
+        font-size: 14px;
+        line-height: 17px;
     }
     
     /* Adjust the styles for mobile image here */
