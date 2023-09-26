@@ -37,7 +37,7 @@ const IndexPage = () => {
 {/* Message Container */}
 <div className={styles.messageContainer}>
     <p>
-        Providing reliable porta potty solutions for all your events and projects. Proudly serving all 50 US states.
+        Providing reliable porta potty solutions for all your events and projects. Proudly servicing all 50 US states.
     </p>
     <p>
         Partnered with <span className={styles.gold}>EventMaster</span> and 
@@ -91,7 +91,8 @@ const IndexPage = () => {
       <div className={styles.socialContainer}>
         <Title
           //  name={'Styled by You'}
-          subtitle={'Tag @JohnNYAnytime to be featured.'}
+          
+          // subtitle={'Tag @JohnNYAnytime to be featured.'}
         />
         <div className={styles.socialContentGrid}>
           <img src={`/social/socialMedia1.png`} alt={'social media 1'} />

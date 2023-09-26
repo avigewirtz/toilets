@@ -22,7 +22,7 @@ const { cart } = cartContext || {}; // Destructure only if cartContext is define
   const [showMenu, setShowMenu] = useState(true);
   const [menu, setMenu] = useState();
   const [activeMenu, setActiveMenu] = useState();
-  const bannerMessage = 'Proudly Servicing All 50 States';
+  const bannerMessage = 'Servicing All 50 States';
 
   const handleHover = (navObject) => {
     if (navObject.category) {
