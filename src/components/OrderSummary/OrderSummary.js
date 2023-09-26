@@ -27,10 +27,14 @@ const OrderSummary = ({ totalPrice }) => {
       }),
     }).then((res) => res.json());
 
+    if (session && session.sessionId) {
+      const result = await stripe.redirectToCheckout({
+        sessionId: session.sessionId,
+      });
     // Redirect to Stripe Checkout
-    const result = await stripe.redirectToCheckout({
-      sessionId: session.sessionId,
-    });
+  } else {
+    console.error("Invalid session data:", session);
+  }
 
     if (result.error) {
       // Handle error here
