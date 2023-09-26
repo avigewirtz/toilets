@@ -23,6 +23,8 @@ const { cart } = cartContext || {}; // Destructure only if cartContext is define
   const [menu, setMenu] = useState();
   const [activeMenu, setActiveMenu] = useState();
   const bannerMessage = 'Servicing All 50 States';
+  const [depth, setDepth] = useState(0);
+
 
   const handleHover = (navObject) => {
     if (navObject.category) {
@@ -85,7 +87,7 @@ const { cart } = cartContext || {}; // Destructure only if cartContext is define
             role={'presentation'}
             onClick={() => {
               setMobileMenu(!mobileMenu);
-               setDepth(0);
+              setDepth(0);
             }}
             className={styles.burgerIcon}
           >

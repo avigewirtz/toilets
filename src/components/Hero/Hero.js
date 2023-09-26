@@ -9,15 +9,20 @@ const Hero = (props) => {
     subtitle,
     ctaText,
     ctaAction,
-    image,
+    desktopImage,
+    mobileImage,
     maxWidth,
     ctaStyle,
     ctaLink,
     ctaTo,
     header,
   } = props;
+
+  const backgroundImage = typeof window !== 'undefined' && window.innerWidth <= 800 ? mobileImage : desktopImage;
+
+
   return (
-    <div className={styles.root} style={{ backgroundImage: `url(${image})` }}>
+    <div className={styles.root} style={{ backgroundImage: `url(${backgroundImage})` }}>
       <div className={styles.content} style={{ maxWidth: maxWidth }}>
         {header && <span className={styles.header}>{header}</span>}
         {title && <h2 className={styles.title}>{title}</h2>}

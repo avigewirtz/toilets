@@ -44,13 +44,10 @@
     /* If you wish, you can specify additional styles here */
 }
 
-
 .ctaLink {
-    
     text-transform: uppercase;
     color: var(--standard-white);
     border-bottom: 1px solid var(--standard-white);
-
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
@@ -78,10 +75,14 @@
         font-size: 14px;
         line-height: 17px;
     }
+    
+    /* Adjust the styles for mobile image here */
+   
 }
 
 @media (max-width: 500px) {
     .content {
         padding: 0px 32px;
     }
+    
 }
