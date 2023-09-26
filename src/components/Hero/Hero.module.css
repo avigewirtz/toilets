@@ -67,13 +67,13 @@
     }
 
     .title {
-        font-size: 42px;
-        line-height: 50px;
+        font-size: 24px;
+        line-height: 30px;
     }
 
     .subtitle {
-        font-size: 14px;
-        line-height: 17px;
+        font-size: 10px;
+        line-height: 14px;
     }
     
     /* Adjust the styles for mobile image here */

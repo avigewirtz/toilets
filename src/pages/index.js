@@ -29,7 +29,7 @@ const IndexPage = () => {
       <Hero
         maxWidth={'500px'}
         desktopImage={'/banner10.png'}
-        mobileImage={'/banner1.png'} 
+        mobileImage={'/bannerMobile.png'} 
         title={'Reliable Porta Potty Suplier'}
         subtitle={'Clean, Sanitary, and Timely Delivered'}
         ctaText={'Find your rental'}
