@@ -30,8 +30,8 @@ const IndexPage = () => {
         maxWidth={'500px'}
         desktopImage={'/banner.png'}
         mobileImage={'/bannerMobile.png'} 
-        title={'Reliable Porta Potty Rentals'}
-        subtitle={'Clean, Sanitary, and Timely Delivered'}
+        title={''}
+        subtitle={''}
         ctaText={'Find your rental'}
         ctaAction={goToShop}
       />

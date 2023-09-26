@@ -61,9 +61,22 @@
     text-transform: uppercase;
 }
 
+/* Existing styles remain unchanged */
+/* ... */
+
+/* Existing styles */
+
+/* Existing styles remain the same */
+
 @media (max-width: 800px) {
+    /* Adjusted existing styles */
     .root {
         min-height: 50vh;
+        position: relative;
+    }
+    .content{
+        left: auto;
+        top: auto;
     }
 
     .title {
@@ -75,14 +88,19 @@
         font-size: 14px;
         line-height: 17px;
     }
-    
-    /* Adjust the styles for mobile image here */
-   
+    .ctaButton {
+        position: absolute;
+        left: calc(-137px);  /* Counterbalance the left of .content */
+          /* Counterbalance the top of .content */
+        bottom: calc(-90px);  /* At the bottom of the .root container */
+        
+      }
+     
+
 }
 
 @media (max-width: 500px) {
     .content {
         padding: 0px 32px;
     }
-    
 }
