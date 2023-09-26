@@ -1,4 +1,6 @@
-const stripe = require("stripe")("sk_test_51NuR0LB1tqdkd8US28H2tVA892GHkHcXmYDRYcjH7N4Lx2jZUSV7twnvKGALCnjtusmhCHerNmaASntH739JgYUZ00q2yFzfyL");
+//  const stripe = require("stripe")("sk_test_51NuR0LB1tqdkd8US28H2tVA892GHkHcXmYDRYcjH7N4Lx2jZUSV7twnvKGALCnjtusmhCHerNmaASntH739JgYUZ00q2yFzfyL");
+
+const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
 
 exports.handler = async (event, context) => {
   // Check HTTP method
