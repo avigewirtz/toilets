@@ -6,7 +6,7 @@ exports.handler = async (event, context) => {
     return { statusCode: 405, body: "Method Not Allowed" };
   }
 
-  // Check if STRIPE_SECRET_KEY is set
+  // Check if STRIPE_SECRET_KEY is set (Note: This is not strictly necessary if you're hardcoding your secret key as you did above)
   if (!process.env.STRIPE_SECRET_KEY) {
     return { statusCode: 500, body: "STRIPE_SECRET_KEY not set" };
   }
@@ -53,6 +53,7 @@ exports.handler = async (event, context) => {
       body: JSON.stringify({ sessionId: session.id }),
     };
   } catch (err) {
+    console.error('Stripe error:', err);  // Log the complete error object to server logs
     return {
       statusCode: 500,
       body: JSON.stringify({
