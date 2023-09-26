@@ -28,10 +28,10 @@ const IndexPage = () => {
       {/* Hero Container */}
       <Hero
         maxWidth={'500px'}
-        image={'/banner1.png'}
+        image={'/banner.png'}
         title={'Reliable Porta Potty Rentals'}
         subtitle={'Clean, Sanitary, and Timely Delivered'}
-        ctaText={'Rent now'}
+        ctaText={'Find your rental'}
         ctaAction={goToShop}
       />
 {/* Message Container */}
@@ -45,6 +45,13 @@ const IndexPage = () => {
     </p>
 </div>
 
+     {/* Collection Container */}
+     {/* <div className={styles.collectionContainer}>
+        <Container size={'large'}>
+          <Title name={'Categories'} />
+          <ProductCollectionGrid />
+        </Container>
+      </div> */}
 
 
 
@@ -72,7 +79,13 @@ const IndexPage = () => {
         }
       />
 
-  
+         {/* Blog Grid */}
+         <div className={styles.blogsContainer}>
+        <Container size={'large'}>
+          <Title name={'Blog'} subtitle={'Notes on life and style'} />
+          <BlogPreviewGrid data={blogData} />
+        </Container>
+      </div>
 
       {/* Social Media */}
       <div className={styles.socialContainer}>

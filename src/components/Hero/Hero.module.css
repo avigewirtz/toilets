@@ -3,7 +3,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 80vh;
-
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,9 +14,12 @@
 .content {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    position: absolute;
+    left: 350px;  /* You can adjust this value */
+    top: 20%; 
     justify-content: center;
-    color: var(--standard-white);
+    align-items: center;  /* Added this line to center align the items vertically */
+    color: var(--standard-black);
     max-width: 500px;
     gap: 40px;
 }
@@ -25,22 +28,22 @@
     font-size: 72px;
     line-height: 86px;
     font-weight: normal;
-    text-align: center;
+    text-align: center;  /* Text remains centered */
     white-space: pre-wrap;
 }
 
 .subtitle {
-    
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
-    text-align: center;
+    text-align: center;  /* Text remains centered */
 }
 
 .ctaButton {
-    width: 180px;
-    
+    width: 180px;  
+    /* If you wish, you can specify additional styles here */
 }
+
 
 .ctaLink {
     
