@@ -1,11 +1,28 @@
-import React from 'react';
+import React, { useEffect, useContext } from 'react';
 import * as styles from './CSS/accountSuccess.module.css';
 
 import ActionCard from '../components/ActionCard';
 import Container from '../components/Container';
 import Layout from '../components/Layout/Layout';
+import CartContext from '../context/CartContext';
 
 const OrderConfirmPage = (props) => {
+
+  const context = useContext(CartContext);
+  
+  let setCart;
+  
+  if (context) {
+    ({ setCart } = context);
+  }
+
+  useEffect(() => {
+    if (setCart) {
+      // Clear the cart when the component mounts
+      setCart([]);
+    }
+  }, []);
+
   return (
     <Layout disablePaddingBottom>
       <Container size={'medium'}>
