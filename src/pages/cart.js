@@ -19,7 +19,8 @@ const CartPage = (props) => {
     cart = cartContext.cart; // Extract cart when context is defined
   }
   // Calculate total price
-  const totalPrice = cart ? cart.reduce((sum, item) => sum + (item.price * item.quantity), 0) : 0;
+  const totalPrice = cart ? cart.reduce((sum, item) => sum + (item.price * item.quantity * item.numberOfDays), 0) : 0;
+
   if (!cart || cart.length === 0) {
     // Handle the case where cart is empty or undefined
     return (

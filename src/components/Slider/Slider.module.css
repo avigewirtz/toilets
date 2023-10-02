@@ -18,9 +18,9 @@
     margin-right: 16px;
 }
 
-.customDots :global(.slick-active) > .mobilePagination{
+.customDots :global(.slick-active) > .mobilePagination {
     border-bottom: 2px solid var(--standard-black);
-  }
+}
 
 .spacing :global(.slick-list) {
     margin: 0 -5px;
@@ -28,4 +28,28 @@
 
 .spacing :global(.slick-slide) > div {
     padding: 0 5px;
+}
+
+/* Desktop specific styling */
+@media (min-width: 1000px) { /* Adjust the 768px value based on when you want the desktop styles to kick in */
+    .root {
+        /* Any general desktop adjustments to the slider container */
+    }
+
+    .customDots {
+        /* Adjust the pagination dots styling for desktop if needed */
+    }
+
+    .mobilePagination {
+        width: 48px; /* Increase the size of pagination for better visibility on desktop */
+        height: 16px;
+    }
+
+    .spacing :global(.slick-list) {
+        margin: 0 -10px; /* You can adjust the margin to give slides more spacing on desktop */
+    }
+
+    .spacing :global(.slick-slide) > div {
+        padding: 0 10px; /* Adjust padding for individual slides on desktop */
+    }
 }

@@ -5,12 +5,12 @@ import ListItemText from '@mui/material/ListItemText';
 import ExpandLess from '@mui/icons-material/ExpandLess';
 import ExpandMore from '@mui/icons-material/ExpandMore';
 import Collapse from '@mui/material/Collapse';
-import * as styles from './how-it-works.module.css';
+import * as styles from './productFAQ.module.css';
 import Box from '@mui/material/Box';
 
 
 
-const HowItWorks = (props) => {
+const ProductFAQ = (props) => {
     const { bgColor, title, steps } = props;
     const [openIndex, setOpenIndex] = useState(-1); // No step is expanded initially
   
@@ -56,5 +56,5 @@ const HowItWorks = (props) => {
   };
   
   
-  export default HowItWorks;
+  export default ProductFAQ;
   

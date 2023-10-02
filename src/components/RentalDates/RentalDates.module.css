@@ -1,18 +1,41 @@
-.rentalDatesContainer {
-    padding: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    margin-bottom: 16px;
-  }
-  
-  .dateInputContainer {
-    display: flex;
-    flex-direction: column;
-    margin: 8px 0;
-  }
-  
-  label {
-    font-weight: 600;
-    margin-bottom: 4px;
-  }
-  
+.dateInputContainer {
+  margin: 8px 0;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+h6 {
+  margin-bottom: 8px;
+  font-size: 14px;
+  text-align: left; /* Align "Rental Dates" to the left */
+}
+
+/* Overrides for Ant Design's DatePicker */
+.ant-picker-range {
+  border: 0; 
+  width: 100%; /* Ensure the picker takes the full width */
+}
+
+.ant-picker-input {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  text-align: center;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.datePicker {
+  width: 100%;
+}
+.quantityLabel {
+  font-weight: 400; 
+  font-size: 14px;
+  line-height: 17px;
+  text-align: left;
+  display: block;
+  margin-bottom: 8px;
+}

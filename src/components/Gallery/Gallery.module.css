@@ -2,12 +2,6 @@
 
 }
 
-.cardGrid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2px;
-}
-
 .imageContainer {
     width: 100%;
     height: 520px;
@@ -19,25 +13,24 @@
     object-fit: cover;
 }
 
-.mobileSlider {
-    display: none;
+.sliderContainer {
+    display: block;  /* slider will be visible by default */
+    margin-bottom: 32px;
 }
 
-@media (max-width: 800px) {
-    .cardGrid {
-        display: none;
+.root {
+    margin-left: -3.5%;
+    margin-right: -2.5%;
+}
+@media (min-width: 801px) {
+    .sliderContainer {
+        width: 100%; /* ensure the slider spans the entire width */
+        max-width: var(--max-slider-width, 600px); /* you can adjust this value; it controls the maximum width the slider can have */
+        margin: 0 auto; /* centers the slider if it's less than 100% width */
     }
 
-    .mobileSlider {
-        display: block;
-        margin-bottom: 32px;
-    }
-
-    .root {
-        margin-left: -3.5%;
-        margin-right: -2.5%;
+    .imageContainer {
+        height: auto; /* adjust height based on the image */
+        max-height: 520px; /* limit to a max height */
     }
 }
-
-
-

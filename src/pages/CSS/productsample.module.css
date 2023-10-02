@@ -16,7 +16,8 @@
 }
 
 .details {
-    max-width: 450px;
+    max-width: 500px;
+    margin-right: 85px;
 }
 
 .details h1 {
@@ -52,21 +53,48 @@
 .sizeContainer {
     margin-top: 56px;
 }
-
-.quantityContainer {
-    margin-top: 40px;
+.parentContainer {
+    display: flex;
+    align-items: start;  /* Align items to the top */
+    
 }
 
-.quantityContainer span{
+
+.rentalDatesContainer {
+    /* margin-left: 10px; */
+    width:  70%;
+
+}
+.quantityContainer {
+    /* margin-right: 10px; */
+
+}
+
+.faqContainer{
+    margin-top: 100px;
+}
+/* .quantityContainer span{
     font-weight: normal;
     font-size: 14px;
     line-height: 17px;
-}
-
+} */
+.flexContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: bottom;
+  }
+/*   
 .quantityContainer > div {
     margin-top: 8px;
-}
-
+} */
+.quantityLabel {
+    font-weight: 400; 
+    font-size: 14px;
+    line-height: 17px;
+    display: block;
+    margin-bottom: 8px;
+  }
+  
 .actionContainer {
     margin-top: 32px;
     display: flex;

@@ -31,6 +31,7 @@ const QuickView = (props) => {
           <span className={styles.productName}>{sampleProduct.name}</span>
           <div className={styles.price}>
             <CurrencyFormatter amount={sampleProduct.price}></CurrencyFormatter>
+            {' '}/ day
           </div>
           <div className={styles.productImageContainer}>
             <img alt={sampleProduct.alt} src={sampleProduct.image}></img>

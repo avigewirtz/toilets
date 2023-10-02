@@ -9,6 +9,7 @@ const Gallery = (props) => {
     slidesToShow: 1,
   };
 
+
   const renderImages = () => {
     return images?.map((imageObject, index) => {
       return (
@@ -21,22 +22,14 @@ const Gallery = (props) => {
 
   return (
     <div className={styles.root}>
-      <div className={styles.cardGrid}>
-        {images?.map((imageObject, index) => {
-          return (
-            <div key={index} className={styles.imageContainer}>
-              <img alt={imageObject.alt} src={imageObject.image} />
-            </div>
-          );
-        })}
-      </div>
-      <div className={styles.mobileSlider}>
+      <div className={styles.sliderContainer}>  {/* renamed to sliderContainer */}
         <Slider settings={customSliderSettings}>
           {images && renderImages()}
         </Slider>
       </div>
     </div>
-  );
+);
+
 };
 
 export default Gallery;

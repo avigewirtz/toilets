@@ -2,7 +2,7 @@
     {
         "id": "1",
         "name": "Global",
-        "price": 75,
+        "price": 5,
         "alt": "Global",
         "image": "/products/global_front.jpg",
         "tags": ["global", "potty", "Standard", "front-page"],
@@ -35,7 +35,7 @@
     {
         "id": "2",
         "name": "Axxis",
-        "price": 85,
+        "price": 5.5,
         "alt": "Axxis",
         "image": "/products/axxis_front.jpg",
         "pdfUrl": "/products/global.pdf",
@@ -82,7 +82,7 @@
     {
         "id": "3",
         "name": "Tufway",
-        "price": 105,
+        "price": 6,
         "alt": "Tufway",
         "image": "/products/tufway_front.jpg",
         "tags": ["tufway", "potty", "Standard"],
@@ -121,7 +121,7 @@
     {
         "id": "4",
         "name": "Aspen",
-        "price": 105,
+        "price": 6.5,
         "alt": "ASPEN",
         "image": "/products/Aspen_Front.jpg",
         "tags": ["aspen", "potty", "Standard"],
@@ -157,7 +157,7 @@
     {
         "id": "5",
         "name": "Maxim 3000",
-        "price": 115,
+        "price": 7,
         "alt": "Maxim 3000",
         "image": "/products/maxim3000_front.jpg",
         "tags": ["maxim3000", "potty", "Standard"],
@@ -192,7 +192,7 @@
     {
         "id": "6",
         "name": "Liberty",
-        "price": 125,
+        "price": 7.5,
         "alt": "Liberty",
         "image": "/products/liberty_front.jpg",
         "tags": ["liberty", "potty", "Wheelchair Accessible", "front-page"],
@@ -230,7 +230,7 @@
     {
         "id": "7",
         "name": "Freedom",
-        "price": 135,
+        "price": 8,
         "alt": "Freedom",
         "image": "/products/freedom_front.jpg",
         "tags": ["freedom", "potty", "Wheelchair Accessible"],
@@ -266,7 +266,7 @@
     {
         "id": "8",
         "name": "Highrise",
-        "price": 135,
+        "price": 7,
         "alt": "Highrise",
         "image": "/products/highrise_front.jpg",
         "tags": ["highrise", "potty", "Specialty"],
@@ -311,7 +311,7 @@
     {
         "id": "9",
         "name": "Poly Mini",
-        "price": 165,
+        "price": 7.5,
         "alt": "Poly Mini",
         "image": "/products/mini_front.jpg",
         "tags": ["poly-mini", "potty", "Specialty"],
@@ -345,7 +345,7 @@
     {
         "id": "10",
         "name": "Fresh Start Shower",
-        "price": 155,
+        "price": 8,
         "alt": "Fresh Start Shower",
         "image": "/products/shower_open_front.jpg",
         "tags": ["fresh-start-shower", "potty", "Specialty", "front-page"],

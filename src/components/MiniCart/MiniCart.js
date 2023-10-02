@@ -81,6 +81,7 @@ const MiniCart = (props) => {
             <span>Total (USD)</span>
             <span>
               <CurrencyFormatter amount={calculateTotal(cartContext.cart)} appendZero />
+              
             </span>
           </div>
           <span className={styles.taxNotes}>
@@ -101,7 +102,7 @@ const MiniCart = (props) => {
 // Function to calculate the total price of items in the cart
 // Function to calculate the total price of items in the cart
 const calculateTotal = (cart) => {
-  return cart.reduce((total, item) => total + (item.price * item.quantity), 0);
+  return cart.reduce((total, item) => total + (item.price * item.quantity * item.numberOfDays), 0);
 };
 
 

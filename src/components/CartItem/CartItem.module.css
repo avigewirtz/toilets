@@ -57,9 +57,11 @@
 }
 
 .editContainer {
+    margin-top: 10px;
     display: inline-flex;
     border-bottom: 1px solid var(--standard-black);
     cursor: pointer;
+    
 }
 
 .editContainer span {

@@ -3,12 +3,10 @@ import React, { createContext, useState, useEffect, useContext } from 'react';
 const CartContext = createContext();
 
 export const CartProvider = ({ children }) => {
-  // Initialize cart from localStorage if available
   const initialCart = JSON.parse(localStorage.getItem('cart')) || [];
   const [cart, setCart] = useState(initialCart);
   const [lastAddedItem, setLastAddedItem] = useState(null);
 
-  // Use useEffect to update localStorage whenever the cart changes
   useEffect(() => {
     localStorage.setItem('cart', JSON.stringify(cart));
   }, [cart]);
@@ -17,31 +15,36 @@ export const CartProvider = ({ children }) => {
    // console.log("Current cart:", cart);
   }, [cart]);
 
-  const addToCart = (product, quantity) => {
-  
-    // Ensure quantity is a number
+  const addToCart = (product, quantity, rentalDateRange, deliveryAddress, numberOfDays) => {
+
     const numQuantity = Number(quantity);
-  
     const existingItem = cart.find(item => item.id === product.id);
-  
+
+    const newItem = {
+      ...product,
+      quantity: numQuantity,
+      rentalDateRange: rentalDateRange,
+      deliveryAddress: deliveryAddress,
+      numberOfDays: numberOfDays
+    };
+    
+
     if (existingItem) {
-      // Replace the existing quantity with the new quantity
       setCart(cart.map(item =>
         item.id === product.id
-          ? { ...item, quantity: numQuantity }
+          ? newItem
           : item
       ));
     } else {
-      setCart([...cart, { ...product, quantity: numQuantity }]);
+      setCart([...cart, newItem]);
     }
-    setLastAddedItem({ ...product, quantity });
+    setLastAddedItem(newItem);
   };
 
   const removeFromCart = (itemId) => {
     console.log('Removing item with ID:', itemId);
     setCart(cart.filter(item => item.id !== itemId));
   };
-  
 
   const adjustQuantity = (itemId, newQuantity) => {
     setCart(cart.map(item =>

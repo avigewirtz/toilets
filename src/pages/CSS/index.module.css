@@ -34,6 +34,10 @@
     color: var(--standard-gold);
 }
 
+.howItWorksContainer{
+    margin-top: 100px;
+}
+
 .contentTitle{
     text-align: center;
     font-weight: normal;

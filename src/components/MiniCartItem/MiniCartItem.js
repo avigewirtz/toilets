@@ -1,88 +1,57 @@
-// import React from 'react';
-
-// import { navigate } from 'gatsby';
-// import AdjustItem from '../AdjustItem';
-// import CurrencyFormatter from '../CurrencyFormatter';
-// import RemoveItem from '../RemoveItem';
-
-// import * as styles from './MiniCartItem.module.css';
-
-// const MiniCartItem = (props) => {
-//   const { image, alt, name, price, color, size } = props;
-
-//   return (
-//     <div className={styles.root}>
-//       <div
-//         className={styles.imageContainer}
-//         role={'presentation'}
-//         onClick={() => navigate('/product/sample')}
-//       >
-//         <img src={image} alt={alt} />
-//       </div>
-//       <div className={styles.detailsContainer}>
-//         <div className={styles.metaContainer}>
-//           <span className={styles.name}>{name}</span>
-//           <div className={styles.priceContainer}>
-//             <CurrencyFormatter amount={price} />
-//           </div>
-//           <span className={styles.meta}>Color: {color}</span>
-//           <span className={styles.meta}>
-//             Size:
-//             <span className={styles.size}>{size}</span>
-//           </span>
-//         </div>
-//         <div className={styles.adjustItemContainer}>
-//           <AdjustItem />
-//         </div>
-//       </div>
-//       <div className={styles.closeContainer}>
-//         <RemoveItem />
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default MiniCartItem;
 import React, { useContext } from 'react';
 import { navigate } from 'gatsby';
 import AdjustItem from '../AdjustItem';
 import CurrencyFormatter from '../CurrencyFormatter';
 import RemoveItem from '../RemoveItem';
-import CartContext from '../../context/CartContext'; // Import the CartContext
+import CartContext from '../../context/CartContext';
 import * as styles from './MiniCartItem.module.css';
 
 const MiniCartItem = (props) => {
   const { image, alt, name, price, id } = props;
-  const { removeFromCart, adjustQuantity, cart } = useContext(CartContext);  // Added adjustQuantity and cart
+  const { removeFromCart, adjustQuantity, cart } = useContext(CartContext);
 
   const handleRemoveClick = () => {
     console.log('Remove button clicked for item:', name, 'with ID:', id);
     removeFromCart(id);
   };
 
-  const currentItem = cart.find(item => item.id === id);  // Find the current item
-  const currentQuantity = currentItem ? currentItem.quantity : 0;  // Get current quantity
+  const currentItem = cart.find(item => item.id === id);
+  const currentQuantity = currentItem ? currentItem.quantity : 0;
+  
+  const { rentalDateRange, numberOfDays } = currentItem || {};
+  const totalPrice = price * numberOfDays;
 
   return (
     <div className={styles.root}>
       <div
         className={styles.imageContainer}
         role={'presentation'}
-        onClick={() => navigate(`/product/${encodeURIComponent(name)}`)}  // Navigate based on product name
+        onClick={() => navigate(`/product/${encodeURIComponent(name)}`)}
       >
         <img src={image} alt={alt} />
       </div>
       <div className={styles.detailsContainer}>
         <div className={styles.metaContainer}>
           <span className={styles.name}>{name}</span>
+          
+          {/* Additional Information */}
+          {/* <span>Dates: {rentalDateRange ? `${rentalDateRange[0]}  -  ${rentalDateRange[1]}` : "Not set"}</span> */}
+          <span>Total rental days: {numberOfDays || "Not set"}</span>
+
           <div className={styles.priceContainer}>
             <CurrencyFormatter amount={price} />
+            {' '}/ day
+          </div>
+          <div className={styles.priceContainer}>
+          Total Price:
+            <CurrencyFormatter amount={totalPrice} />
+          
           </div>
         </div>
         <div className={styles.adjustItemContainer}>
           <AdjustItem 
             qty={currentQuantity} 
-            setQty={(newQuantity) => adjustQuantity(id, newQuantity)}  // Added props
+            setQty={(newQuantity) => adjustQuantity(id, newQuantity)}
           />
         </div>
       </div>

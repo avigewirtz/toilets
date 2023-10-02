@@ -3,8 +3,9 @@
     grid-template-columns: repeat(3, 1fr);
     border: 1px solid var(--bg-light-gray);
     width: 99px;
-    padding: 12px;
+    padding:10.35px;
     background-color: var(--standard-white);
+    border-radius: 6px;
 }
 
 .iconContainer {

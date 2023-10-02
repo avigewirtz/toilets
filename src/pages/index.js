@@ -71,22 +71,22 @@ const IndexPage = () => {
         </Container>
       </div>
 
-
+      <div className={styles.howItWorksContainer}>
      {/* How It Works */}
      <HowItWorks
   bgColor="var(--standard-light-grey)"
   title="How It Works"
   steps={[
-    "Choose Your Porta Potty Type: Browse through our range of porta potty options, suitable for various events and needs. Whether it's a simple model or a luxury unit, we've got you covered.",
-    "Specify Quantity & Details: Indicate how many porta potties you'll need, along with the delivery address and the dates they'll be required.",
-    "Optional Add-Ons: Enhance your rental experience by selecting from a variety of add-ons. Whether it's extra hand sanitizers, lighting, or any other amenity, you can customize your rental to fit your exact needs.",
-    "Instant Price Calculation: Once you've provided the necessary details, our system will instantly calculate the total price for your rental. No hidden fees, just transparent pricing.",
-    "Add to Cart & Checkout: After reviewing your selection and the total price, simply add your choices to the cart and proceed to checkout.",
-    "Booking Confirmation: After successfully completing the checkout process, you'll receive a confirmation. Rest assured, our team will then reach out to you to finalize the delivery and any other details. Change of plans? No worries. If you cancel your booking within 3 days, you'll receive a full refund, no questions asked."
+    "1. Choose Your Porta Potty Type: Browse through our range of porta potty options, suitable for various events and needs. Whether it's a simple model or a luxury unit, we've got you covered.",
+    "2. Specify Quantity & Details: Indicate how many porta potties you'll need, along with the delivery address and the dates they'll be required.",
+    "3. Optional Add-Ons: Enhance your rental experience by selecting from a variety of add-ons. Whether it's extra hand sanitizers, lighting, or any other amenity, you can customize your rental to fit your exact needs.",
+    "4. Instant Price Calculation: Once you've provided the necessary details, our system will instantly calculate the total price for your rental. No hidden fees, just transparent pricing.",
+    "5. Add to Cart & Checkout: After reviewing your selection and the total price, simply add your choices to the cart and proceed to checkout.",
+    "6. Booking Confirmation: After successfully completing the checkout process, you'll receive a confirmation. Rest assured, our team will then reach out to you to finalize the delivery and any other details. Change of plans? No worries. If you cancel your booking within 3 days, you'll receive a full refund, no questions asked."
   ]}
 />
 
-
+</div>
 
          {/* Blog Grid */}
          <div className={styles.blogsContainer}>
