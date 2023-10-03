@@ -1,20 +1,28 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';  
 import { Input } from 'antd';
 import * as styles from './DeliveryAddress.module.css';
-import Button from '../Button';
 
-const AddressInputSingleBox = ({ onAddressChange }) => {
+const DeliveryAddress = ({ onAddressChange }) => {
   const [address, setAddress] = useState('');
 
   const handleInputChange = (e) => {
     const inputValue = e.target.value;
     setAddress(inputValue);
-
-    // Pass the updated address value to the parent component
+    localStorage.setItem('savedAddress', inputValue);
     if (onAddressChange) {
       onAddressChange(inputValue);
     }
   };
+
+  useEffect(() => {
+    const savedAddress = localStorage.getItem('savedAddress');
+    if (savedAddress) {
+      setAddress(savedAddress);
+      if (onAddressChange) {
+        onAddressChange(savedAddress);
+      }
+    }
+  }, [onAddressChange]);
 
   return (
     <div className={styles.root}>
@@ -24,12 +32,12 @@ const AddressInputSingleBox = ({ onAddressChange }) => {
           placeholder="Enter event address" 
           className={styles.transparentInput}
           value={address}
-          onChange={handleInputChange} // Update input with the value
-          size="large" // Increase the size of the input
+          onChange={handleInputChange}
+          size="large"
         />
       </div>
     </div>
   );
 };
 
-export default AddressInputSingleBox;
+export default DeliveryAddress;

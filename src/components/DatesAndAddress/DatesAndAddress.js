@@ -6,7 +6,7 @@ import DeliveryAddress from '../DeliveryAddress/DeliveryAddress';
 import * as styles from './DatesAndAddress.module.css';
 
 const DatesAndDelivery = () => {
-  const [form] = Form.useForm(); 
+  const [form] = Form.useForm();
 
   const handleDateChange = (dates) => {
     form.setFieldsValue({ rentalDateRange: dates });

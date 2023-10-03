@@ -33,8 +33,8 @@ const ProductPage = (props) => {
     const start = new Date(startDate);
     const end = new Date(endDate);
     const difference = Math.abs(end - start);
-    const days = Math.ceil(difference / (1000 * 60 * 60 * 24));
-    return days === 0 ? 1 : days;
+    const days = Math.ceil(difference / (1000 * 60 * 60 * 24)) + 1;
+    return days;
   };
 
   const handleAddToCartClick = () => {
