@@ -11,7 +11,7 @@ import Container from '../components/Container';
 
 const SupportPage = (props) => {
   const subpages = [
-    { title: 'Returns', key: 'returns' },
+    { title: 'Refunds', key: 'returns' },
     { title: 'Payments & Security', key: 'payments' },
     { title: 'Terms & Conditions', key: 'terms' },
     { title: 'Contact Us', key: 'contact' },
@@ -65,13 +65,13 @@ const SupportPage = (props) => {
   return (
     <Layout disablePaddingBottom>
       <div className={styles.root}>
-        <Banner
+        {/* <Banner
           maxWidth={'650px'}
           name={current.title}
           bgImage={'/support.png'}
           color={'var(--standard-white)'}
           height={'350px'}
-        />
+        /> */}
 
         <div className={styles.navContainer}>
           {subpages.map((details, index) => {

@@ -69,7 +69,7 @@ const Footer = (prop) => {
             })}
             <div className={styles.newsLetter}>
               <div className={styles.newsLetterContent}>
-                <span className={styles.linkTitle}>Newsletter</span>
+                {/* <span className={styles.linkTitle}>Newsletter</span>
                 <p className={styles.promoMessage}>
                   Get 10% off your first rental! Plus, be the first to know
                   about sales, new product launches and exclusive offers!
@@ -85,7 +85,7 @@ const Footer = (prop) => {
                     placeholder={'Email'}
                     handleChange={(_, e) => setEmail(e)}
                   />
-                </form>
+                </form> */}
                 <div className={styles.socialContainer}>
                   {/* {Config.social.youtube && (
                     <div

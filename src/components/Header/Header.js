@@ -96,13 +96,13 @@ const { cart } = cartContext || {}; // Destructure only if cartContext is define
           <Brand />
           <div className={styles.actionContainers}>
            
-            <Link
+            {/* <Link
               aria-label="Orders"
               href={isAuth() ? '/login' : '/account/orders/'}
               className={`${styles.iconContainer} ${styles.hideOnMobile}`}
             >
               <Icon symbol={'user'}></Icon>
-            </Link>
+            </Link> */}
 
 
             <button

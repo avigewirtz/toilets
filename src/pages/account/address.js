@@ -36,9 +36,9 @@ const AddressPage = (props) => {
   const [showForm, setShowForm] = useState(false);
   const [showDelete, setShowDelete] = useState(false);
 
-  if (isAuth() === false) {
-    navigate('/login');
-  }
+  // if (isAuth() === false) {
+  //   navigate('/login');
+  // }
 
   return (
     <Layout>

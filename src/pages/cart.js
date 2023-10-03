@@ -37,9 +37,9 @@ const CartPage = (props) => {
                 </Link>
               </div>
               <Brand />
-              <div className={styles.loginContainer}>
+              {/* <div className={styles.loginContainer}>
                 <Link to={'/login'}>Login</Link>
-              </div>
+              </div> */}
             </div>
             <div className={styles.summaryContainer}>
               <h3>My Bag</h3>
