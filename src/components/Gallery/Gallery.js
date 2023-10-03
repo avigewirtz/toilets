@@ -7,6 +7,7 @@ const Gallery = (props) => {
 
   const customSliderSettings = {
     slidesToShow: 1,
+    arrows: true,
   };
 
 

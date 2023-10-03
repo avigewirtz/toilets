@@ -10,6 +10,7 @@ import ProductCardGrid from '../components/ProductCardGrid';
 import Quote from '../components/Quote';
 import HowItWorks from '../components/HowItWorks';
 import Title from '../components/Title';
+import DatesAndDelivery from '../components/DatesAndAddress/DatesAndAddress';
 
 
 import { generateMockBlogData, generateMockProductData } from '../helpers/mock';
@@ -38,6 +39,10 @@ const IndexPage = () => {
         ctaText={''}
         ctaAction={goToShop}
       />
+      
+      {/* <DatesAndDelivery className={styles.hideOnDesktop} /> */}
+
+
 {/* Message Container */}
 <div className={styles.messageContainer}>
     <p>

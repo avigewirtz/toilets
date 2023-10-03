@@ -15,6 +15,9 @@
     line-height: 62px;
 }
 
+.hideOnDesktop {
+    display: none;
+  }
 
 .messageContainer {
     text-align: center;
@@ -108,7 +111,9 @@
     .sustainableContainer {
         margin: 96px 0px 0px 0px;
     }
-
+    .hideOnDesktop {
+        display: block; /* or whatever the default display value should be */
+      }
     .socialContentGrid {
         grid-template-columns: repeat(2, 1fr);
     }
