@@ -58,7 +58,7 @@ const DeliveryAddress = ({ onAddressChange }) => {
     // Fetch suggestions from Netlify function
     if (inputValue) {
       try {
-        const response = await axios.get(`/netlify/functions/googleAutocomplete?input=${inputValue}`);
+        const response = await axios.get(`https://johnnyanytime.com/netlify/functions/googleAutocomplete?input=${inputValue}`);
         if (response.data.predictions) {
           setSuggestions(response.data.predictions.map(item => item.description));
         }
