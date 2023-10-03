@@ -22,7 +22,7 @@ const { cart } = cartContext || {}; // Destructure only if cartContext is define
   const [showMenu, setShowMenu] = useState(true);
   const [menu, setMenu] = useState();
   const [activeMenu, setActiveMenu] = useState();
-  const bannerMessage = 'Servicing All 50 States';
+  const bannerMessage = '100% Refund up to 48 Before Delivery. No Questions Asked.';
   const [depth, setDepth] = useState(0);
 
 
