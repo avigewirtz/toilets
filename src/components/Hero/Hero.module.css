@@ -16,12 +16,12 @@
     flex-direction: column;
     position: absolute;
     left: 375px;  /* You can adjust this value */
-    top: 30%; 
+    top: 20%; 
     justify-content: center;
     align-items: center;  /* Added this line to center align the items vertically */
     color: var(--standard-black);
-    max-width: 500px;
-    gap: 40px;
+    max-width: 800px;
+    gap: 20px;
 }
 
 .title {
@@ -39,19 +39,6 @@
     text-align: center;  /* Text remains centered */
 }
 
-.ctaButton {
-    width: 180px;  
-    /* If you wish, you can specify additional styles here */
-}
-
-.ctaLink {
-    text-transform: uppercase;
-    color: var(--standard-white);
-    border-bottom: 1px solid var(--standard-white);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 17px;
-}
 
 .header {
     color: var(--standard-white);

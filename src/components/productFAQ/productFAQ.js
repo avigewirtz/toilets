@@ -8,8 +8,6 @@ import Collapse from '@mui/material/Collapse';
 import * as styles from './productFAQ.module.css';
 import Box from '@mui/material/Box';
 
-
-
 const ProductFAQ = (props) => {
     const { bgColor, title, steps } = props;
     const [openIndex, setOpenIndex] = useState(-1); // No step is expanded initially
@@ -25,7 +23,7 @@ const ProductFAQ = (props) => {
     return (
       <div className={styles.root} style={{ backgroundColor: bgColor }}>
         <span><h4><b>{title}</b></h4></span>
-        <Box width={700}> {/* Set width as desired */}
+        <Box className={styles.boxContainer}>
           <List component="nav" aria-labelledby="nested-list-subheader">
             {steps && steps.map((step, index) => {
               const stepParts = step.split(":");
@@ -35,8 +33,7 @@ const ProductFAQ = (props) => {
               return (
                 <div key={index}>
                   <ListItem button onClick={() => toggleListItem(index)}>
-                  <ListItemText primary={<b>{stepTitle}</b>} />
-
+                    <ListItemText primary={<b>{stepTitle}</b>} />
                     {openIndex === index ? <ExpandLess /> : <ExpandMore />}
                   </ListItem>
                   <Collapse in={openIndex === index} timeout="auto" unmountOnExit>
@@ -53,8 +50,6 @@ const ProductFAQ = (props) => {
         </Box>
       </div>
     );
-  };
-  
-  
-  export default ProductFAQ;
-  
+};
+
+export default ProductFAQ;

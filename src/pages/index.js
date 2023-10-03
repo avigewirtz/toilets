@@ -11,6 +11,7 @@ import Quote from '../components/Quote';
 import HowItWorks from '../components/HowItWorks';
 import Title from '../components/Title';
 
+
 import { generateMockBlogData, generateMockProductData } from '../helpers/mock';
 
 import * as styles from './CSS/index.module.css';
@@ -28,12 +29,13 @@ const IndexPage = () => {
     <Layout disablePaddingBottom>
       {/* Hero Container */}
       <Hero
-        maxWidth={'500px'}
+       className={styles.hero}
+        maxWidth={'600px'}
         desktopImage={'/banner10.png'}
         mobileImage={'/bannerMobile.png'} 
-        title={'Reliable Porta Potty Suplier'}
-        subtitle={'Clean, Sanitary, and Timely Delivered'}
-        ctaText={'Find your rental'}
+        title={'Find Your Rental'}
+        subtitle={'Book your Bathroom Trailer Online'}
+        ctaText={''}
         ctaAction={goToShop}
       />
 {/* Message Container */}

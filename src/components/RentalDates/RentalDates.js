@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { DatePicker, Tooltip } from 'antd';
-import moment from 'moment';
+
 import * as styles from './RentalDates.module.css';
 
 const { RangePicker } = DatePicker;
@@ -23,8 +23,6 @@ const RentalDates = ({ onDateChange }) => {
 
   const handleChange = (dates, dateStrings) => {
     setDates(dates);
-    
-    const numberOfDays = calculateNumberOfDays(dateStrings[0], dateStrings[1]);
 
     if (dateStrings[0] && dateStrings[1]) {
       setShowTooltip(true);
@@ -37,7 +35,7 @@ const RentalDates = ({ onDateChange }) => {
 
   return (
     <div>
-      <span className={styles.quantityLabel}>Rental Dates</span>
+      <span className={styles.quantityLabel}><b>Rental Dates</b></span>
       <div className={styles.dateInputContainer}>
         <Tooltip 
           title={

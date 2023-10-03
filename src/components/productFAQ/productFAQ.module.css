@@ -8,13 +8,14 @@
     align-items: center;
     justify-content: center;
     padding: 60px 32px;
+    max-width: 95%; /* max width of 95% of the viewport width */
+    margin: 0 auto; /* centers the element horizontally */
 }
 
 .root span {
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
-
     display: block;
     margin-bottom: 20px;
 }
@@ -28,11 +29,20 @@
     max-width: 1000px;
 }
 
+.boxContainer {
+    width: 100%; /* takes full width of the parent */
+    max-width: 700px; /* will not exceed 700px */
+    margin: 0 auto; /* centers the box horizontally */
+}
+
 @media (max-width: 600px) {
+
+    .root {
+        padding: 40px 16px; /* reduce padding for mobile view */
+    }
 
     .root p {
         font-size: 22px;
         line-height: 32px;
     }
 }
-

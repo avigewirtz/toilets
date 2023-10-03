@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Input } from 'antd';
 import * as styles from './DeliveryAddress.module.css';
+import Button from '../Button';
 
 const AddressInputSingleBox = ({ onAddressChange }) => {
   const [address, setAddress] = useState('');
@@ -17,7 +18,7 @@ const AddressInputSingleBox = ({ onAddressChange }) => {
 
   return (
     <div className={styles.root}>
-      <label className={styles.labelStyle}>Address</label>
+      <label className={styles.labelStyle}><b>Address</b></label>
       <div className={styles.inputContainer}>
         <Input 
           placeholder="Enter event address" 

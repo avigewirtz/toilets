@@ -26,7 +26,7 @@ const AboutPage = (props) => {
         {/* Hero Container */}
         <Hero
           maxWidth={'900px'}
-          image={'/about.png'}
+          image={'/about-image.png'}
           title={`John NY Anytime \n Leading Portta Potty Suplier`}
         />
 

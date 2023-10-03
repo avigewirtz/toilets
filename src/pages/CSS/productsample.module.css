@@ -206,6 +206,9 @@
     .gallery {
         margin-right: 16px;
     }
+    .details{
+        margin-right: 0px;
+    }
 }
 
 @media (max-width: 800px) {

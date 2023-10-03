@@ -1,7 +1,0 @@
-/* CombinedComponent.module.css */
-.root {
-    display: flex;        /* use flexbox to lay out the child components */
-    justify-content: space-between;  /* add some space between the two components */
-    align-items: center;  /* vertically align the components in the center */
-  }
-  

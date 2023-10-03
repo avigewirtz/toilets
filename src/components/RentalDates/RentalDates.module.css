@@ -1,14 +1,14 @@
 .dateInputContainer {
-  margin: 8px 0;
+  /* margin: 8px 0; */
 }
 
 label {
   font-weight: 600;
-  margin-bottom: 4px;
+  /* margin-bottom: 4px; */
 }
 
 h6 {
-  margin-bottom: 8px;
+  /* margin-bottom: 8px; */
   font-size: 14px;
   text-align: left; /* Align "Rental Dates" to the left */
 }
