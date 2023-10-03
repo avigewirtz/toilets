@@ -33,20 +33,20 @@ const OrderConfirmPage = (props) => {
             to email us at customerservice@example.com
           </p>
           <div className={styles.actionContainer}>
-            <ActionCard
+            {/* <ActionCard
               title={'Order Status'}
               icon={'delivery'}
               subtitle={'Check your order status'}
               link={'/account/orders'}
               size={'lg'}
-            />
+            /> */}
 
-            <ActionCard
+            {/* <ActionCard
               title={'Shop'}
               icon={'bag'}
               subtitle={'Continue Shopping'}
               link={'/shop'}
-            />
+            /> */}
 
             <ActionCard
               title={'FAQs'}
