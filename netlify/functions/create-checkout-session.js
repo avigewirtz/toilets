@@ -46,8 +46,8 @@ exports.handler = async (event, context) => {
         },
       ],
       mode: "payment",
-      success_url: "https://main--portapotty.netlify.app/orderConfirm",
-      cancel_url: "https://your-cancel-url.com",
+      success_url: "https://johnnyanytime/orderConfirm",
+      cancel_url: "https://johnnyanytime/cart",
     });
 
     return {
