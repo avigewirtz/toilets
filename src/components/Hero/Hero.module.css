@@ -49,6 +49,9 @@
 }
 
 @media (max-width: 800px) {
+    .content > * {
+        display: none;
+      }
     .root {
         min-height: 50vh;
     }
