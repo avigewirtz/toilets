@@ -1,4 +1,5 @@
-import * as React from 'react';
+import React, { useState, useEffect } from 'react';
+
 import AttributeGrid from '../components/AttributeGrid';
 import Container from '../components/Container';
 import Hero from '../components/Hero';
@@ -21,10 +22,28 @@ import { Link, navigate } from 'gatsby';
 const IndexPage = () => {
   const newArrivals = generateMockProductData(3, 'front-page');
   const blogData = generateMockBlogData(3);
-
+  const [isMobile, setIsMobile] = useState(false);
   const goToShop = () => {
     navigate('/shop');
   };
+  useEffect(() => {
+    // This function will run once after the component mounts
+    const handleResize = () => {
+      // Check if the width is less than 1000px
+      setIsMobile(window.innerWidth < 1000);
+    };
+
+    // Initial check
+    handleResize();
+
+    // Add an event listener to the window resize event
+    window.addEventListener('resize', handleResize);
+
+    // Clean up the event listener on component unmount
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   return (
     <Layout disablePaddingBottom>
@@ -40,7 +59,8 @@ const IndexPage = () => {
         ctaAction={goToShop}
       />
       
-      {/* <DatesAndDelivery className={styles.hideOnDesktop} /> */}
+     {isMobile && <DatesAndDelivery className={styles.datesAndDelivery}/>
+}
 
 
 {/* Message Container */}

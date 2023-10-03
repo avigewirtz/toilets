@@ -14,3 +14,17 @@
 .inputContainer button {
   align-self: center;
 }
+@media (max-width: 800px) {
+
+  .inputContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    border: 1px;
+    border-radius: 6px;
+    width: 300px;
+    margin: 0 auto;
+    box-shadow: none; /* Added box shadow */
+  }
+
+}

@@ -107,6 +107,8 @@
     object-fit: cover;
 }
 
+
+
 @media (max-width: 800px) {
     .sustainableContainer {
         margin: 96px 0px 0px 0px;
@@ -121,4 +123,10 @@
     .highlightContainer {
         margin: 88px 0px 40px 0px;
     }
+    .datesAndDelivery {
+        margin-top: 20px;/* Adjustments specific for mobile, for example: */
+         /* Adjust padding */
+        /* Add any other styles or overrides for mobile */
+      }
+    
 }
