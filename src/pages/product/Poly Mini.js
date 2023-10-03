@@ -121,7 +121,7 @@ const ProductPage = (props) => {
                       fullWidth
                       level={'primary'}
                     >
-                      Add to Cart
+                      Add Rental to Cart
                     </Button>
                   </div>
                 </div>
