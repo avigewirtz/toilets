@@ -31,3 +31,30 @@
     background-color: transparent;
 }
 
+/* ... existing styles ... */
+
+/* Suggestions container styles */
+.styles.suggestionsContainer {
+    background-color: #ffffff; /* White background */
+    border: 1px solid #e0e0e0; /* Light border around the container */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 4px; /* Rounded corners */
+    max-height: 200px; /* Or whatever max height you find appropriate */
+    overflow-y: auto; /* Scroll only if suggestions exceed the max height */
+}
+
+/* Individual suggestion styles */
+.styles.suggestion {
+    padding: 8px 12px; /* Some padding for better appearance */
+    cursor: pointer; /* Hand cursor for better UX */
+    border-bottom: 1px solid #e0e0e0; /* Separator between suggestions */
+}
+
+.styles.suggestion:last-child {
+    border-bottom: none; /* Removing border for the last suggestion */
+}
+
+/* Hover effect for suggestions */
+.styles.suggestion:hover {
+    background-color: #f7f7f7; /* Light gray background on hover */
+}
