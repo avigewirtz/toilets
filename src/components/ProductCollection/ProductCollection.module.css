@@ -1,6 +1,6 @@
 .root {
     width: 100%;
-    min-height: 630px;
+    min-height: 300px;
 
     background-size: cover;
     background-repeat: no-repeat;
@@ -19,14 +19,14 @@
     position: absolute;
     bottom: 75px;
     left: 55px;
-    color: var(--standard-white);
+    color: var(--standard-black);
 
     z-index: 10;
 }
 
 .title {
-    font-size: 42px;
-    line-height: 50px;
+    font-size: 36px;
+    line-height: 42px;
     font-family: var(--standard-header);
     margin-bottom: 24px;
     padding-right: 16px;
@@ -46,7 +46,7 @@
 
 .overlay {
     width: 100%;
-    min-height: 630px;
+    min-height: 300px;
     position: absolute;
     top: 0px;
     left: 0px;

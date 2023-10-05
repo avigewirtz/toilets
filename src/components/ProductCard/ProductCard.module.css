@@ -116,6 +116,23 @@
     visibility: hidden;
     opacity: 0;
 }
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: var(--standard-black);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+    z-index: 9;
+}
+
+.imageContainer:hover .overlay {
+    opacity: 0.4;
+    visibility: visible;
+}
 
 @media (max-width: 800px) {
     .bagContainer {

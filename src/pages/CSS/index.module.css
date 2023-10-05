@@ -3,7 +3,8 @@
 }
 
 .collectionContainer {
-    margin-top: 8px;
+    margin-top: 40px;
+    margin-bottom: 60px;
 }
 
 .promotionContainer {
@@ -23,8 +24,32 @@
     text-align: center;
     padding: 60px 0px;
     margin: 0px 30px;
+    background-color: var(--standard-light-grey);
 }
 
+.hassleContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers horizontally */
+    justify-content: center; /* Centers vertically */
+    height: 100%; /* You can set this to any desired height, or remove it if not needed */
+    padding: 60px 0px;
+    margin: 0px 30px;
+    background-color: var(--standard-light-grey);
+
+  }
+  
+  .hassleContainer h4, .hassleContainer p {
+      margin-top: 20px;
+    text-align: center; /* Aligns text to the center */
+    max-width: 800px;
+
+  }
+  
+.paragraph{
+    max-width: 800px;
+    align-content: center;
+}
 .messageContainer p {
     text-transform: uppercase;
     font-weight: 500;
@@ -93,6 +118,11 @@
     margin: 96px 40px 0px 40px;
 }
 
+.callButton{
+    margin-top: 20px;
+    border-radius: 6px;
+    
+}
 .socialContainer {
     margin-top: 64px;
 }

@@ -36,6 +36,7 @@ const ProductPage = (props) => {
     const days = Math.ceil(difference / (1000 * 60 * 60 * 24)) + 1;
     return days;
   };
+  
 
   const handleAddToCartClick = () => {
     form.validateFields()

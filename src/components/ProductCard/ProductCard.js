@@ -36,7 +36,7 @@ const ProductCard = (props) => {
         role={'presentation'}
       >
         <img style={{ height: `${height}px` }} src={image} alt={imageAlt}></img>
-
+        <div className={styles.overlay}></div>
       </div>
       <div className={styles.detailsContainer}>
         <span className={styles.productName}>{name}</span>
@@ -56,6 +56,7 @@ const ProductCard = (props) => {
         </div>
         <span className={styles.meta}>{meta}</span>
       </div>
+      <div className={styles.overlay}></div>
     </div>
   );
 };

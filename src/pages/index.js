@@ -12,6 +12,7 @@ import Quote from '../components/Quote';
 import HowItWorks from '../components/HowItWorks';
 import Title from '../components/Title';
 import DatesAndDelivery from '../components/DatesAndAddress/DatesAndAddress';
+import Button from '../components/Button';
 
 
 import { generateMockBlogData, generateMockProductData } from '../helpers/mock';
@@ -44,6 +45,7 @@ const IndexPage = () => {
       window.removeEventListener('resize', handleResize);
     };
   }, []);
+  
 
   return (
     <Layout disablePaddingBottom>
@@ -74,20 +76,12 @@ const IndexPage = () => {
     </p>
 </div>
 
-     {/* Collection Container */}
-     {/* <div className={styles.collectionContainer}>
-        <Container size={'large'}>
-          <Title name={'Categories'} />
-          <ProductCollectionGrid />
-        </Container>
-      </div> */}
 
 
-
-      {/* New Arrivals */}
+      {/* Porta Potties */}
       <div className={styles.newArrivalsContainer}>
         <Container>
-          <Title name={'Porta Potties'} link={'/shop'} textLink={'view all'} />
+          <Title name={'Our Porta Potties'} link={'/shop'} textLink={'view all'} />
           <ProductCardGrid
             spacing={true}
             showSlider
@@ -112,6 +106,31 @@ const IndexPage = () => {
     "6. Booking Confirmation: After successfully completing the checkout process, you'll receive a confirmation. Rest assured, our team will then reach out to you to finalize the delivery and any other details. Change of plans? No worries. If you cancel your booking within 3 days, you'll receive a full refund, no questions asked."
   ]}
 />
+
+
+ {/* Collection Container */}
+     <div className={styles.collectionContainer}>
+        <Container size={'large'}>
+          <Title name={'Sectors We Service'} />
+          <ProductCollectionGrid />
+        </Container>
+      </div>
+
+{/* Hassle Container */}
+<div className={styles.hassleContainer}>
+  <h4>Hassle-Free Service</h4>
+  <p>
+    Have any questions about our trailers or rental process? We'll take your call and walk you through everything making it easy to understand. We understand that your time and money is valuable. This is why our team at John NY Anytime will give you straight answers and <b>never push a sale</b> on you.
+  </p>
+  <Button
+    onClick={() => window.location.href = "tel:1234567890"}
+    level={'primary'}
+    className={styles.callButton}  // Custom styling
+  >
+    123-456-7890
+  </Button>
+</div>
+
 
 </div>
 
