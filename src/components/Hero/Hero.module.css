@@ -19,7 +19,7 @@
     top: 20%; 
     justify-content: center;
     align-items: center;  /* Added this line to center align the items vertically */
-    color: var(--standard-white);
+    color: var(--standard-black);
     max-width: 800px;
     gap: 20px;
 }
@@ -41,7 +41,7 @@
 
 
 .header {
-    color: var(--standard-white);
+    color: var(--standard-black);
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;

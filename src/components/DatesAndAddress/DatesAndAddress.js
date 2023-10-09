@@ -30,22 +30,25 @@ const DatesAndDelivery = () => {
   return (
     <Form form={form}>
       <div className={styles.inputContainer}>
-        <Form.Item 
-          name="rentalDateRange" 
-          rules={[{ required: true, message: 'Please select the rental dates!' }]}
-        >
-          <RentalDates onDateChange={handleDateChange} />
-        </Form.Item>
-        <Form.Item 
-          name="deliveryAddress" 
-          rules={[{ required: true, message: 'Please input the delivery address!' }]}
-        >
-          <DeliveryAddress onAddressChange={handleAddressChange} />
-        </Form.Item>
-        <Button onClick={handleSearch}>Search</Button> 
+        <div className={styles.formItemsContainer}>
+          <Form.Item 
+            name="rentalDateRange" 
+            rules={[{ required: true, message: 'Please select the rental dates!' }]}
+          >
+            <RentalDates onDateChange={handleDateChange} />
+          </Form.Item>
+          <Form.Item 
+            name="deliveryAddress" 
+            rules={[{ required: true, message: 'Please input the delivery address!' }]}
+          >
+            <DeliveryAddress onAddressChange={handleAddressChange} />
+          </Form.Item>
+          <Button onClick={handleSearch}>Search</Button>
+        </div>
       </div>
     </Form>
   );
+  
 };
 
 export default DatesAndDelivery;
