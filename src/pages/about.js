@@ -48,7 +48,7 @@ const AboutPage = (props) => {
         <Container size={'large'} spacing={'min'}>
     <div className={styles.detailContainer} ref={historyRef}>
         <p>
-            Founded in 2021, John NY Anytime is a leading porta potty service in New York, ensuring cleanliness and convenience for events and construction sites.
+            Founded in 2021, Johnny Anytime is a leading porta potty service in New York, ensuring cleanliness and convenience for events and construction sites.
         </p>
         <br />
         <br />
@@ -68,7 +68,7 @@ const AboutPage = (props) => {
         <h3>Our Values</h3>
         <div ref={valuesRef}>
             <p>
-                John NY Anytime has always been at the forefront of providing sanitation solutions to the New York community. We understand the significance of clean and easily accessible facilities, especially during events or in construction sites. While our industry is different, our commitment to quality and innovation is unwavering. As we've grown, our core values have remained the same.
+                Johnny Anytime has always been at the forefront of providing sanitation solutions to the New York community. We understand the significance of clean and easily accessible facilities, especially during events or in construction sites. While our industry is different, our commitment to quality and innovation is unwavering. As we've grown, our core values have remained the same.
             </p>
             <ol>
                 <li>Commitment to hygiene and cleanliness</li>

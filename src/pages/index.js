@@ -53,7 +53,7 @@ const IndexPage = () => {
       <Hero
        className={styles.hero}
         maxWidth={'600px'}
-        desktopImage={'/banner10.png'}
+        desktopImage={'/banner40.png'}
         mobileImage={'/bannerMobile.png'} 
         title={'Find Your Rental'}
         subtitle={'Book your Bathroom Trailer Online'}
@@ -120,7 +120,7 @@ const IndexPage = () => {
 <div className={styles.hassleContainer}>
   <h4>Hassle-Free Service</h4>
   <p>
-    Have any questions about our trailers or rental process? We'll take your call and walk you through everything making it easy to understand. We understand that your time and money is valuable. This is why our team at John NY Anytime will give you straight answers and <b>never push a sale</b> on you.
+    Have any questions about our trailers or rental process? We'll take your call and walk you through everything making it easy to understand. We understand that your time and money is valuable. This is why our team at Johnny Anytime will give you straight answers and <b>never push a sale</b> on you.
   </p>
   <Button
     onClick={() => window.location.href = "tel:1234567890"}
