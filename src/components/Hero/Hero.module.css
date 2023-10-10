@@ -27,9 +27,13 @@
 .title {
     font-size: 72px;
     line-height: 86px;
+    color: var(--standard-black);
     font-weight: normal;
     text-align: center;  /* Text remains centered */
     white-space: pre-wrap;
+    /* text-shadow: 8px 8px 14px rgba(0, 0, 0, .8); */
+    backdrop-filter: blur(2px);
+
 }
 
 .subtitle {
@@ -37,6 +41,10 @@
     font-size: 20px;
     line-height: 24px;
     text-align: center;  /* Text remains centered */
+    color: var(--standard-black);
+    /* text-shadow: 8px 8px 14px rgba(0, 0, 0, .8); */
+    backdrop-filter: blur(2px);
+
 }
 
 
@@ -46,6 +54,7 @@
     font-size: 14px;
     line-height: 17px;
     text-transform: uppercase;
+    
 }
 
 @media (max-width: 800px) {

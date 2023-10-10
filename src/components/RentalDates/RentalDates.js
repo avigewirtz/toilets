@@ -49,7 +49,10 @@ const RentalDates = ({ onDateChange }) => {
 
   return (
     <div>
-      <span className={styles.quantityLabel}><b>Rental Dates</b></span>
+      <span className={styles.quantityLabel} style={{ fontSize: '20px' }}>
+    <b>Rental Dates</b>
+</span>
+
       <div className={styles.dateInputContainer}>
         <Tooltip 
           title={

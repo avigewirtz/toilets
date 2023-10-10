@@ -34,7 +34,7 @@ const Hero = (props) => {
         {title && <h2 className={styles.title}>{title}</h2>}
         {subtitle && <span className={styles.subtitle}>{subtitle}</span>}
        
-        <DatesAndDelivery onUpdate={handleUpdate}/>
+        {/* <DatesAndDelivery onUpdate={handleUpdate}/> */}
       
        
       </div>

@@ -86,7 +86,11 @@ const DeliveryAddress = ({ onAddressChange }) => {
 
   return (
     <div className={styles.root}>
-      <label className={styles.labelStyle}><b>Address</b></label>
+      <label className={styles.labelStyle} style={{ fontSize: '20px' }}>
+    <b>Address</b>
+</label>
+
+      
       <div className={styles.inputContainer}>
         <Input 
           placeholder="Enter event address" 
