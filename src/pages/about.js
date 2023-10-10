@@ -23,12 +23,7 @@ const AboutPage = (props) => {
   return (
     <Layout disablePaddingBottom>
       <div className={styles.root}>
-        {/* Hero Container */}
-        {/* <Hero
-          maxWidth={'900px'}
-          image={'/about-image.png'}
-          title={`John NY Anytime \n Leading Portta Potty Suplier`}
-        /> */}
+    
 
         <div className={styles.navContainer}>
           <ThemeLink onClick={() => handleScroll(historyRef)} to={'#history'}>

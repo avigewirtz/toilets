@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { Link } from 'gatsby';
-import { isAuth } from '../../helpers/general';
 import AddNotification from '../AddNotification';
 import Brand from '../Brand';
 import Container from '../Container';
@@ -96,13 +95,6 @@ const { cart } = cartContext || {}; // Destructure only if cartContext is define
           <Brand />
           <div className={styles.actionContainers}>
            
-            {/* <Link
-              aria-label="Orders"
-              href={isAuth() ? '/login' : '/account/orders/'}
-              className={`${styles.iconContainer} ${styles.hideOnMobile}`}
-            >
-              <Icon symbol={'user'}></Icon>
-            </Link> */}
 
 
             <button

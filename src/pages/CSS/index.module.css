@@ -90,6 +90,11 @@
     left: 50%;
     gap: 72px;
 }
+.leftImage {
+    flex: 0 0 200px; /* Adjust this value to make the image smaller */
+    height: auto; /* This ensures the image maintains its aspect ratio */
+    margin-right: 16px; /* Space between the image and the text */
+}
 
 .ctaCustomButton {
     margin-top: 50px;

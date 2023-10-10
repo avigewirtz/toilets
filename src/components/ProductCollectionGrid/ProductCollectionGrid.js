@@ -7,51 +7,43 @@ const ProductCollectionGrid = (props) => {
   return (
     <div className={styles.root}>
       <ProductCollection
-        // image={'/collections/global_front.jpg'}
+        image={'/collections/construction.png'}
         title={'Construction Sites'}
-        // text={'View All'}
         link={'/shop'}
       />
       <ProductCollection
-        // image={'/collections/liberty_front.jpg'}
+       image={'/collections/concert.png'}
         title={'Festivals & Concerts'}
-        // text={'View All'}
         link={'/shop'}
       />
       <ProductCollection
-        // image={'/collections/highrise_front.jpg'}
+        image={'/collections/sports.png'}
         title={'Sporting Events'}
-        // text={'View All'}
         link={'/shop'}
       />
       <ProductCollection
-        // image={'/collections/shower_open_front.jpg'}
+        image={'/collections/wedding.png'}
         title={'Weddings'}
-        // text={'View All'}
         link={'/shop'}
       />
        <ProductCollection
-        // image={'/collections/global_front.jpg'}
+       image={'/collections/government.png'}
         title={'Government'}
-        // text={'View All'}
         link={'/shop'}
       />
       <ProductCollection
-        // image={'/collections/liberty_front.jpg'}
+       image={'/collections/disaster.png'}
         title={'Emergency & Disaster Relief'}
-        // text={'View All'}
         link={'/shop'}
       />
       <ProductCollection
-        // image={'/collections/highrise_front.jpg'}
+       image={'/collections/camping.png'}
         title={'Camping Sites & Parks'}
-        // text={'View All'}
         link={'/shop'}
       />
       <ProductCollection
-        // image={'/collections/shower_open_front.jpg'}
+       image={'/collections/corporate.png'}
         title={'Corporate Events'}
-        // text={'View All'}
         link={'/shop'}
       />
     </div>

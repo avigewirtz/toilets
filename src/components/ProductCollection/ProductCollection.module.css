@@ -13,6 +13,11 @@
 .root span {
     transition: color 0.3s ease-in-out;
 }
+.productImage {
+    width: 100%;
+    height: auto;  /* to maintain the aspect ratio */
+    display: block;  /* to remove any bottom spacing */
+}
 
 
 .content {
@@ -26,10 +31,11 @@
 
 .title {
     font-size: 36px;
-    line-height: 42px;
+    line-height: 50px;
     font-family: var(--standard-header);
+    margin-top: 16px; /* Adjusted to top margin */
     margin-bottom: 24px;
-    padding-right: 16px;
+    text-align: center; /* Center the title */
     display: block;
 }
 
