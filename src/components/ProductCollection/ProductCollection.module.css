@@ -30,8 +30,8 @@
 }
 
 .title {
-    font-size: 36px;
-    line-height: 50px;
+    font-size: 26px;
+    line-height: 30px;
     font-family: var(--standard-header);
     margin-top: 16px; /* Adjusted to top margin */
     margin-bottom: 24px;
@@ -52,7 +52,7 @@
 
 .overlay {
     width: 100%;
-    min-height: 300px;
+    min-height: 335px;
     position: absolute;
     top: 0px;
     left: 0px;
