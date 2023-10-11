@@ -1,49 +1,68 @@
-import React from 'react';
-import MultiStep from 'react-multistep';
+import React, { useState } from 'react';
 
-const BookingModal = ({ isVisible, onClose }) => {
-    if (!isVisible) return null;
+import * as styles from './BookingModal.module.css';
+import MultiStep from 'react-multistep';
+import { Button, Radio, Form, Input, Icon } from 'antd';
+
+
+const BookingModal = ({ onClose }) => {
+
+    const StepOne = () => {
+        const [selectedOption, setSelectedOption] = useState("");
+    
+        return (
+            <div>
+                <h3>Step One: Choose Your Rental Type</h3>
+                <Form>
+                    <Form.Item>
+                        <Radio.Group 
+                            value={selectedOption} 
+                            onChange={e => setSelectedOption(e.target.value)}
+                        >
+                            <Radio value="specificDuration">Specific Duration Rental</Radio>
+                            <Radio value="monthlyTerm">Monthly Term Rental</Radio>
+                        </Radio.Group>
+                    </Form.Item>
+                </Form>
+            </div>
+        );
+    };
+    
+
+    const StepTwo = () => {
+        return (
+            <div>
+                <h3>Step Two</h3>
+                {/* Your form or content for step two */}
+            </div>
+        );
+    };
+
+    const StepThree = () => {
+        return (
+            <div>
+                <h3>Step Three</h3>
+                {/* Your form or content for step three */}
+            </div>
+        );
+    };
 
     const steps = [
-        { name: 'Select Porta Potty', component: <Step1 /> },
-        { name: 'Choose Rental Dates', component: <Step2 /> },
-        { name: 'Delivery Details', component: <Step3 /> }
+        { component: <StepOne /> },
+        { component: <StepTwo /> },
+        { component: <StepThree /> },
     ];
 
     return (
-        <div className="modal-overlay">
-            <div className="modal-content">
-                <button onClick={onClose}>Close</button>
+        <>
+            <div className={styles.modalOverlay} onClick={onClose}></div>
+            <div className={styles.modalContent}>
+                <h2>Your Booking Details</h2>
                 <MultiStep steps={steps} />
+                
+
             </div>
-        </div>
-    );
-};
-
-const Step1 = () => {
-    return (
-        <div>
-            <h2>Select the type of porta potty you wish to rent.</h2>
-            {/* Your form/component for selecting the type of porta potty goes here */}
-        </div>
-    );
-};
-
-const Step2 = () => {
-    return (
-        <div>
-            <h2>Select the start and end dates for your rental.</h2>
-            {/* Your form/component for choosing rental dates goes here */}
-        </div>
-    );
-};
-
-const Step3 = () => {
-    return (
-        <div>
-            <h2>Provide the location and any specific instructions for delivery.</h2>
-            {/* Your form/component for entering delivery details goes here */}
-        </div>
+        </>
     );
 };
 

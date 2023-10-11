@@ -43,8 +43,9 @@ const Hero = (props) => {
         {title && <h2 className={styles.title}>{title}</h2>}
         {subtitle && <span className={styles.subtitle}>{subtitle}</span>}
         <Button onClick={() => navigate('/shop')} level={'primary'}>
-          BOOK NOW
-        </Button>
+  BOOK NOW
+</Button>
+
 
 {/* Conditionally render the BookingModal based on the state */}
 {isModalVisible && <BookingModal onClose={handleCloseModal} />}
