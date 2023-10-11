@@ -46,8 +46,8 @@ exports.handler = async (event, context) => {
         },
       ],
       mode: "payment",
-      success_url: "https://johnnyanytime/orderConfirm",
-      cancel_url: "https://johnnyanytime/cart",
+      success_url: "https://johnnyanytime.com/orderConfirm",
+      cancel_url: "https://johnnyanytime.com/cart",
     });
 
     return {
