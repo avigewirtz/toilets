@@ -3,6 +3,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 80vh;
+    margin-top: 40px;
 
     display: flex;
     flex-direction: column;
