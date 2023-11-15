@@ -2,9 +2,11 @@ import React, { useState } from 'react';
 import * as styles from './Hero.module.css';
 import Button from '../Button';
 import { Link } from 'gatsby';
-import DatesAndDelivery from '../DatesAndAddress/DatesAndAddress';
 import BookingModal from '../BookingModal'; 
 import { navigate } from 'gatsby';
+
+import QuoteForm from '../QuoteForm';
+
 const Hero = (props) => {
   const {
     title,
@@ -42,9 +44,8 @@ const Hero = (props) => {
         {header && <span className={styles.header}>{header}</span>}
         {title && <h2 className={styles.title}>{title}</h2>}
         {subtitle && <span className={styles.subtitle}>{subtitle}</span>}
-        <Button onClick={() => navigate('/shop')} level={'primary'}>
-  BOOK NOW
-</Button>
+        <QuoteForm/>
+       
 
 
 {/* Conditionally render the BookingModal based on the state */}

@@ -53,16 +53,15 @@ const IndexPage = () => {
       <Hero
        className={styles.hero}
         maxWidth={'600px'}
-        desktopImage={'/banner40.png'}
-        mobileImage={'/bannerMobile.png'} 
+        desktopImage={'/newBanner.png'}
+        mobileImage={'/newBanner.png'} 
         title={'Find Your Rental'}
         subtitle={'Book your Bathroom Trailer Online'}
         ctaText={''}
         ctaAction={goToShop}
       />
       
-     {isMobile && <DatesAndDelivery className={styles.datesAndDelivery}/>
-}
+  
 
 
 {/* Message Container */}
